@@ -52,6 +52,10 @@ def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]
     except Exception as e:
         logger.warning(f"Overlay did not disappear in time: {e}")
 
+# Function to click an element using JavaScript in case the normal click is blocked
+def click_element_js(driver, element):
+    driver.execute_script("arguments[0].click();", element)
+
 # Main function
 def process_urls():
     for url in urls:
@@ -87,7 +91,8 @@ def process_urls():
             # Wait for animations to complete (if necessary)
             time.sleep(1)  # Adding a small delay to allow animations to finish
             
-            submit_button.click()  # Click the submit button
+            # Try clicking using JavaScript if regular click is blocked
+            click_element_js(driver, submit_button)
             logger.info("Clicked the Submit button.")
             
             # Wait for the page to load after submission
