@@ -34,3 +34,41 @@
 2024-12-13 02:40:03,284 - INFO - Page refreshed after submission.
 2024-12-13 02:40:08,289 - INFO - Waiting before processing the next URL...
 
+2024-12-13 02:40:09,773 - INFO - Log file pushed to GitHub.
+2024-12-13 02:40:09,773 - INFO - Closing the browser.
+2024-12-13 02:42:01,915 - INFO - Processing URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:04,383 - INFO - Navigated to the website.
+2024-12-13 02:42:04,384 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:04,400 - INFO - Page has finished loading.
+2024-12-13 02:42:04,435 - INFO - Overlay disappeared.
+2024-12-13 02:42:05,329 - INFO - Entered URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:07,659 - INFO - Clicked the Submit button.
+2024-12-13 02:42:07,659 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:07,674 - INFO - Page has finished loading.
+2024-12-13 02:42:08,932 - INFO - Page refreshed after submission.
+2024-12-13 02:42:13,938 - INFO - Waiting before processing the next URL...
+
+2024-12-13 02:42:13,938 - INFO - Processing URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:14,908 - INFO - Navigated to the website.
+2024-12-13 02:42:14,908 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:14,920 - INFO - Page has finished loading.
+2024-12-13 02:42:15,193 - INFO - Overlay disappeared.
+2024-12-13 02:42:15,575 - INFO - Entered URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:17,737 - INFO - Clicked the Submit button.
+2024-12-13 02:42:17,737 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:18,046 - INFO - Page has finished loading.
+2024-12-13 02:42:19,283 - INFO - Page refreshed after submission.
+2024-12-13 02:42:24,288 - INFO - Waiting before processing the next URL...
+
+2024-12-13 02:42:24,289 - INFO - Processing URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:25,196 - INFO - Navigated to the website.
+2024-12-13 02:42:25,196 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:25,208 - INFO - Page has finished loading.
+2024-12-13 02:42:25,470 - INFO - Overlay disappeared.
+2024-12-13 02:42:25,867 - INFO - Entered URL: https://gnews.io/sitemap.xml
+2024-12-13 02:42:27,905 - INFO - Clicked the Submit button.
+2024-12-13 02:42:27,905 - INFO - Waiting for the page to finish loading...
+2024-12-13 02:42:28,188 - INFO - Page has finished loading.
+2024-12-13 02:42:29,299 - INFO - Page refreshed after submission.
+2024-12-13 02:42:34,301 - INFO - Waiting before processing the next URL...
+
