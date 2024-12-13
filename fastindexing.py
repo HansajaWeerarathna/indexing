@@ -10,41 +10,41 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # List of URLs (hardcoded)
-# urls = [
-#     "https://bestbusinesses.space/sitemap.xml",
-#     "https://bestbusinesses.space/random-sitemap.xml",
-#     "https://bestbusinesses.space/random-sitemap.xml", 
-#     'https://bestbusinesses.space/random-sitemap.xml', 
-#     'https://bestbusinesses.space/random-sitemap.xml', 
-#     'https://bestbusinesses.space/random-sitemap.xml', 
-#     'https://sitemap.bestbusinesses.space/sitemap.xml', 
-#     "https://ustopbusiness.online/sitemap.xml",
-#     "https://ustopbusiness.online/random-sitemap.xml",
-#     "https://ustopbusiness.online/random-sitemap.xml", 
-#     'https://ustopbusiness.online/random-sitemap.xml', 
-#     'https://ustopbusiness.online/random-sitemap.xml', 
-#     'https://ustopbusiness.online/random-sitemap.xml', 
-#     'https://sitemap.ustopbusiness.online/sitemap.xml', 
-#     "https://americantopbusiness.site/sitemap.xml",
-#     "https://americantopbusiness.site/random-sitemap.xml",
-#     "https://americantopbusiness.site/random-sitemap.xml", 
-#     'https://americantopbusiness.site/random-sitemap.xml', 
-#     'https://americantopbusiness.site/random-sitemap.xml', 
-#     'https://americantopbusiness.site/random-sitemap.xml', 
-#     'https://sitemap.americantopbusiness.site/sitemap.xml',
-#     "https://americanbusinesses.space/sitemap.xml",
-#     "https://americanbusinesses.space/random-sitemap.xml",
-#     "https://americanbusinesses.space/random-sitemap.xml", 
-#     'https://americanbusinesses.space/random-sitemap.xml', 
-#     'https://americanbusinesses.space/random-sitemap.xml', 
-#     'https://americanbusinesses.space/random-sitemap.xml', 
-#     'https://sitemap.americanbusinesses.space/sitemap.xml'
-# ]
+urls = [
+    "https://bestbusinesses.space/sitemap.xml",
+    "https://bestbusinesses.space/random-sitemap.xml",
+    "https://bestbusinesses.space/random-sitemap.xml", 
+    'https://bestbusinesses.space/random-sitemap.xml', 
+    'https://bestbusinesses.space/random-sitemap.xml', 
+    'https://bestbusinesses.space/random-sitemap.xml', 
+    'https://sitemap.bestbusinesses.space/sitemap.xml', 
+    "https://ustopbusiness.online/sitemap.xml",
+    "https://ustopbusiness.online/random-sitemap.xml",
+    "https://ustopbusiness.online/random-sitemap.xml", 
+    'https://ustopbusiness.online/random-sitemap.xml', 
+    'https://ustopbusiness.online/random-sitemap.xml', 
+    'https://ustopbusiness.online/random-sitemap.xml', 
+    'https://sitemap.ustopbusiness.online/sitemap.xml', 
+    "https://americantopbusiness.site/sitemap.xml",
+    "https://americantopbusiness.site/random-sitemap.xml",
+    "https://americantopbusiness.site/random-sitemap.xml", 
+    'https://americantopbusiness.site/random-sitemap.xml', 
+    'https://americantopbusiness.site/random-sitemap.xml', 
+    'https://americantopbusiness.site/random-sitemap.xml', 
+    'https://sitemap.americantopbusiness.site/sitemap.xml',
+    "https://americanbusinesses.space/sitemap.xml",
+    "https://americanbusinesses.space/random-sitemap.xml",
+    "https://americanbusinesses.space/random-sitemap.xml", 
+    'https://americanbusinesses.space/random-sitemap.xml', 
+    'https://americanbusinesses.space/random-sitemap.xml', 
+    'https://americanbusinesses.space/random-sitemap.xml', 
+    'https://sitemap.americanbusinesses.space/sitemap.xml'
+]
 
-urls = ["https://www.thenewsapi.com/sitemap.xml", 
-        "https://www.thenewsapi.com/sitemap.xml", 
-        "https://www.thenewsapi.com/sitemap.xml"
-    ]
+# urls = ["https://www.thenewsapi.com/sitemap.xml", 
+#         "https://www.thenewsapi.com/sitemap.xml", 
+#         "https://www.thenewsapi.com/sitemap.xml"
+#     ]
 
 # Environment Variables for Configuration
 chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/lib/chromium-browser/chromedriver')
