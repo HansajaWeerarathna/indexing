@@ -53,20 +53,28 @@ def process_urls():
         # Wait for the page to load
         wait_until_loaded(driver)
         
-        # Find the input field and submit button by their XPath
-        search_box = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/div/input")  # URL input field
-        submit_button = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/button")  # Submit button
-        
-        # Enter the URL into the search box and submit it
-        search_box.clear()  # Clear any pre-existing value
-        search_box.send_keys(url)  # Enter the new URL
-        logger.info(f"Entered URL: {url}")
-        
-        submit_button.click()  # Click the submit button
-        logger.info("Clicked the Submit button.")
-        
-        # Wait for the page to load after submission
-        wait_until_loaded(driver)
+        try:
+            # Find the input field and submit button by their XPath
+            search_box = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/div/input")  # URL input field
+            submit_button = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/button")  # Submit button
+            
+            # Wait for the input field and submit button to be interactable
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(search_box))
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(submit_button))
+
+            # Enter the URL into the search box and submit it
+            search_box.clear()  # Clear any pre-existing value
+            search_box.send_keys(url)  # Enter the new URL
+            logger.info(f"Entered URL: {url}")
+            
+            submit_button.click()  # Click the submit button
+            logger.info("Clicked the Submit button.")
+            
+            # Wait for the page to load after submission
+            wait_until_loaded(driver)
+            
+        except Exception as e:
+            logger.error(f"An error occurred while processing the URL {url}: {e}")
         
         # Refresh the page before going to the next URL
         driver.refresh()
