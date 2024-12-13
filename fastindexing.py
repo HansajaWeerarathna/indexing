@@ -84,19 +84,15 @@ def prepend_log_to_file(log_message):
     except Exception as e:
         print(f"Error while prepending to the log file: {e}")
 
-# Set up logging (we will override the basicConfig later to write logs to the file)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger()
+# Function to initialize logging
+def setup_logging():
+    log_title = f"Processing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+    prepend_log_to_file(log_title)  # Prepend the title to the log file
 
-# Custom logging handler to prepend logs
-class PrependFileHandler(logging.Handler):
-    def emit(self, record):
-        log_message = self.format(record)
-        prepend_log_to_file(log_message)
-
-# Attach the custom handler to the logger
-prepend_handler = PrependFileHandler()
-logger.addHandler(prepend_handler)
+    # Set up logging configuration (this will log entries below the header)
+    logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logger = logging.getLogger()
+    return logger
 
 # Function to push the log file to GitHub
 def push_log_to_github():
@@ -142,10 +138,6 @@ def click_element_js(driver, element):
 
 # Main function
 def process_urls():
-    # Add the current date and time as a header at the top of the log file
-    log_title = f"Processing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
-    prepend_log_to_file(log_title)  # Prepend the title to the log file
-
     for url in urls:
         logger.info(f"Processing URL: {url}")
         
@@ -202,6 +194,7 @@ def process_urls():
 
 # Run the script once (this will be called by the cron job)
 try:
+    logger = setup_logging()  # Set up logging with the header prepended
     process_urls()
 except Exception as e:
     logger.error(f"An error occurred: {e}")
