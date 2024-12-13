@@ -46,7 +46,6 @@ urls = ["https://gnews.io/sitemap.xml",
         "https://gnews.io/sitemap.xml"
     ]
 
-
 # Set up Chrome options for headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run browser in headless mode
@@ -62,10 +61,42 @@ service = Service(executable_path=chromedriver_path)
 # Set up the WebDriver (Chrome with options)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Set up logging
-log_file_path = '/var/indexing/fastindexing.log'  # Path to the log file
-logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Define log file path
+log_file_path = '/var/indexing/fastindexing.log'
+
+# Function to prepend new logs to the beginning of the log file
+def prepend_log_to_file(log_message):
+    try:
+        # Read the current log file content
+        if os.path.exists(log_file_path):
+            with open(log_file_path, 'r') as file:
+                existing_logs = file.read()
+        else:
+            existing_logs = ''
+
+        # Prepend the new log message to the existing logs
+        full_log_content = log_message + '\n' + existing_logs
+        
+        # Write the full content back to the log file
+        with open(log_file_path, 'w') as file:
+            file.write(full_log_content)
+    
+    except Exception as e:
+        print(f"Error while prepending to the log file: {e}")
+
+# Set up logging (we will override the basicConfig later to write logs to the file)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
+
+# Custom logging handler to prepend logs
+class PrependFileHandler(logging.Handler):
+    def emit(self, record):
+        log_message = self.format(record)
+        prepend_log_to_file(log_message)
+
+# Attach the custom handler to the logger
+prepend_handler = PrependFileHandler()
+logger.addHandler(prepend_handler)
 
 # Function to push the log file to GitHub
 def push_log_to_github():
