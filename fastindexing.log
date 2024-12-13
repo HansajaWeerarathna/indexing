@@ -1,5 +1,15 @@
 
 
+Processing started at: 2024-12-13 03:37:05
+
+
+Processing started at: 2024-12-13 03:36:55
+
+
+Processing started at: 2024-12-13 03:36:43
+Processing started at: 2024-12-13 03:36:43
+
+
 Processing started at: 2024-12-13 03:35:25
 
 
@@ -52,4 +62,51 @@ Processing started at: 2024-12-13 03:35:25
 2024-12-13 03:35:29,262 - INFO - Page has finished loading.
 2024-12-13 03:35:30,399 - INFO - Page refreshed after submission.
 2024-12-13 03:35:35,401 - INFO - Waiting before processing the next URL...
+
+2024-12-13 03:35:36,694 - INFO - Log file pushed to GitHub.
+2024-12-13 03:35:36,695 - INFO - Closing the browser.
+2024-12-13 03:36:43,469 - INFO - 
+
+Processing started at: 2024-12-13 03:36:43
+2024-12-13 03:36:43,470 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:36:45,939 - INFO - Navigated to the website.
+2024-12-13 03:36:45,939 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:36:45,954 - INFO - Page has finished loading.
+2024-12-13 03:36:45,974 - INFO - Overlay disappeared.
+2024-12-13 03:36:46,808 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:36:49,289 - INFO - Clicked the Submit button.
+2024-12-13 03:36:49,289 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:36:49,295 - INFO - Page has finished loading.
+2024-12-13 03:36:50,360 - INFO - Page refreshed after submission.
+2024-12-13 03:36:55,365 - INFO - Waiting before processing the next URL...
+
+2024-12-13 03:36:55,366 - INFO - 
+
+Processing started at: 2024-12-13 03:36:55
+2024-12-13 03:36:55,366 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:36:56,205 - INFO - Navigated to the website.
+2024-12-13 03:36:56,205 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:36:56,210 - INFO - Page has finished loading.
+2024-12-13 03:36:56,235 - INFO - Overlay disappeared.
+2024-12-13 03:36:56,976 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:36:59,146 - INFO - Clicked the Submit button.
+2024-12-13 03:36:59,146 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:36:59,156 - INFO - Page has finished loading.
+2024-12-13 03:37:00,209 - INFO - Page refreshed after submission.
+2024-12-13 03:37:05,213 - INFO - Waiting before processing the next URL...
+
+2024-12-13 03:37:05,214 - INFO - 
+
+Processing started at: 2024-12-13 03:37:05
+2024-12-13 03:37:05,214 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:37:06,163 - INFO - Navigated to the website.
+2024-12-13 03:37:06,163 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:37:06,443 - INFO - Page has finished loading.
+2024-12-13 03:37:06,460 - INFO - Overlay disappeared.
+2024-12-13 03:37:07,028 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:37:09,307 - INFO - Clicked the Submit button.
+2024-12-13 03:37:09,308 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:37:09,313 - INFO - Page has finished loading.
+2024-12-13 03:37:10,435 - INFO - Page refreshed after submission.
+2024-12-13 03:37:15,437 - INFO - Waiting before processing the next URL...
 
