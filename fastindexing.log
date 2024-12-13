@@ -218,3 +218,5 @@ Processing started at: 2024-12-13 03:17:56
 2024-12-13 03:18:05,817 - INFO - Page refreshed after submission.
 2024-12-13 03:18:10,823 - INFO - Waiting before processing the next URL...
 
+2024-12-13 03:18:12,067 - INFO - Log file pushed to GitHub.
+2024-12-13 03:18:12,067 - INFO - Closing the browser.
