@@ -1,3 +1,5 @@
+import os
+import subprocess
 import time
 import logging
 from selenium import webdriver
@@ -8,41 +10,42 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # List of URLs (hardcoded)
-urls = [
-    "https://bestbusinesses.space/sitemap.xml",
-    "https://bestbusinesses.space/random-sitemap.xml",
-    "https://bestbusinesses.space/random-sitemap.xml", 
-    'https://bestbusinesses.space/random-sitemap.xml', 
-    'https://bestbusinesses.space/random-sitemap.xml', 
-    'https://bestbusinesses.space/random-sitemap.xml', 
-    'https://sitemap.bestbusinesses.space/sitemap.xml', 
-    "https://ustopbusiness.online/sitemap.xml",
-    "https://ustopbusiness.online/random-sitemap.xml",
-    "https://ustopbusiness.online/random-sitemap.xml", 
-    'https://ustopbusiness.online/random-sitemap.xml', 
-    'https://ustopbusiness.online/random-sitemap.xml', 
-    'https://ustopbusiness.online/random-sitemap.xml', 
-    'https://sitemap.ustopbusiness.online/sitemap.xml', 
-    "https://americantopbusiness.site/sitemap.xml",
-    "https://americantopbusiness.site/random-sitemap.xml",
-    "https://americantopbusiness.site/random-sitemap.xml", 
-    'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://sitemap.americantopbusiness.site/sitemap.xml',
-    "https://americanbusinesses.space/sitemap.xml",
-    "https://americanbusinesses.space/random-sitemap.xml",
-    "https://americanbusinesses.space/random-sitemap.xml", 
-    'https://americanbusinesses.space/random-sitemap.xml', 
-    'https://americanbusinesses.space/random-sitemap.xml', 
-    'https://americanbusinesses.space/random-sitemap.xml', 
-    'https://sitemap.americanbusinesses.space/sitemap.xml'
-]
+# urls = [
+#     "https://bestbusinesses.space/sitemap.xml",
+#     "https://bestbusinesses.space/random-sitemap.xml",
+#     "https://bestbusinesses.space/random-sitemap.xml", 
+#     'https://bestbusinesses.space/random-sitemap.xml', 
+#     'https://bestbusinesses.space/random-sitemap.xml', 
+#     'https://bestbusinesses.space/random-sitemap.xml', 
+#     'https://sitemap.bestbusinesses.space/sitemap.xml', 
+#     "https://ustopbusiness.online/sitemap.xml",
+#     "https://ustopbusiness.online/random-sitemap.xml",
+#     "https://ustopbusiness.online/random-sitemap.xml", 
+#     'https://ustopbusiness.online/random-sitemap.xml', 
+#     'https://ustopbusiness.online/random-sitemap.xml', 
+#     'https://ustopbusiness.online/random-sitemap.xml', 
+#     'https://sitemap.ustopbusiness.online/sitemap.xml', 
+#     "https://americantopbusiness.site/sitemap.xml",
+#     "https://americantopbusiness.site/random-sitemap.xml",
+#     "https://americantopbusiness.site/random-sitemap.xml", 
+#     'https://americantopbusiness.site/random-sitemap.xml', 
+#     'https://americantopbusiness.site/random-sitemap.xml', 
+#     'https://americantopbusiness.site/random-sitemap.xml', 
+#     'https://sitemap.americantopbusiness.site/sitemap.xml',
+#     "https://americanbusinesses.space/sitemap.xml",
+#     "https://americanbusinesses.space/random-sitemap.xml",
+#     "https://americanbusinesses.space/random-sitemap.xml", 
+#     'https://americanbusinesses.space/random-sitemap.xml', 
+#     'https://americanbusinesses.space/random-sitemap.xml', 
+#     'https://americanbusinesses.space/random-sitemap.xml', 
+#     'https://sitemap.americanbusinesses.space/sitemap.xml'
+# ]
 
-# urls = ["https://gnews.io/sitemap.xml", 
-#         "https://gnews.io/sitemap.xml", 
-#         "https://gnews.io/sitemap.xml"
-#     ]
+urls = ["https://gnews.io/sitemap.xml", 
+        "https://gnews.io/sitemap.xml", 
+        "https://gnews.io/sitemap.xml"
+    ]
+
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
@@ -60,8 +63,28 @@ service = Service(executable_path=chromedriver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+log_file_path = '/path/to/logfile.log'  # Path to the log file
+logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
+
+# Function to push the log file to GitHub
+def push_log_to_github():
+    try:
+        # Change to the directory of your Git repository
+        os.chdir('/path/to/your/repo')  # Path to your GitHub repo
+
+        # Add the log file to the git staging area
+        subprocess.run(['git', 'add', log_file_path], check=True)
+
+        # Commit the changes
+        commit_message = f"Update log file: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+        subprocess.run(['git', 'commit', '-m', commit_message], check=True)
+
+        # Push the changes to GitHub
+        subprocess.run(['git', 'push'], check=True)
+        logger.info("Log file pushed to GitHub.")
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Failed to push log file to GitHub: {e}")
 
 # Function to wait until the page has fully loaded by checking the document's ready state
 def wait_until_loaded(driver, max_wait_time=300):
@@ -138,6 +161,9 @@ def process_urls():
         # Wait a little before moving on to the next URL
         time.sleep(5)  # Adjust the delay as needed
         logger.info("Waiting before processing the next URL...\n")
+    
+    # After processing all URLs, push the log to GitHub
+    push_log_to_github()
 
 # Run the script once (this will be called by the cron job)
 try:
