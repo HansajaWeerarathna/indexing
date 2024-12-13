@@ -41,6 +41,17 @@ def wait_until_loaded(driver, max_wait_time=300):
     )
     logger.info("Page has finished loading.")
 
+# Function to wait for overlays or modals to disappear
+def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]', max_wait_time=10):
+    try:
+        # Wait until the overlay disappears (you may need to adjust the XPath for your page)
+        WebDriverWait(driver, max_wait_time).until(
+            EC.invisibility_of_element_located((By.XPATH, overlay_xpath))
+        )
+        logger.info("Overlay disappeared.")
+    except Exception as e:
+        logger.warning(f"Overlay did not disappear in time: {e}")
+
 # Main function
 def process_urls():
     for url in urls:
@@ -52,6 +63,9 @@ def process_urls():
         
         # Wait for the page to load
         wait_until_loaded(driver)
+        
+        # Wait for any overlay or modal to disappear before proceeding
+        wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]')  # Adjust XPath to your overlay
         
         try:
             # Find the input field and submit button by their XPath
@@ -66,6 +80,12 @@ def process_urls():
             search_box.clear()  # Clear any pre-existing value
             search_box.send_keys(url)  # Enter the new URL
             logger.info(f"Entered URL: {url}")
+            
+            # Scroll the submit button into view (if necessary)
+            driver.execute_script("arguments[0].scrollIntoView(true);", submit_button)
+            
+            # Wait for animations to complete (if necessary)
+            time.sleep(1)  # Adding a small delay to allow animations to finish
             
             submit_button.click()  # Click the submit button
             logger.info("Clicked the Submit button.")
