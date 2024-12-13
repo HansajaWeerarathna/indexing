@@ -142,6 +142,10 @@ def click_element_js(driver, element):
 
 # Main function
 def process_urls():
+    # Add the current date and time as a header at the top of the log file
+    log_title = f"Processing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+    prepend_log_to_file(log_title)  # Prepend the title to the log file
+
     for url in urls:
         logger.info(f"Processing URL: {url}")
         
