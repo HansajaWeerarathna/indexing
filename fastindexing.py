@@ -71,7 +71,7 @@ logger = logging.getLogger()
 def push_log_to_github():
     try:
         # Change to the directory of your Git repository
-        os.chdir('/path/to/your/repo')  # Path to your GitHub repo
+        os.chdir('/var/indexing')  # Path to your GitHub repo
 
         # Add the log file to the git staging area
         subprocess.run(['git', 'add', log_file_path], check=True)
