@@ -46,23 +46,22 @@ urls = ["https://www.thenewsapi.com/sitemap.xml",
         "https://www.thenewsapi.com/sitemap.xml"
     ]
 
+# Environment Variables for Configuration
+chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/lib/chromium-browser/chromedriver')
+repo_directory = os.getenv('REPO_DIRECTORY', '/var/indexing')
+log_file_path = os.getenv('LOG_FILE_PATH', '/var/indexing/fastindexing.log')
+
 # Set up Chrome options for headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run browser in headless mode
 chrome_options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
 chrome_options.add_argument("--no-sandbox")  # Disable the sandbox for security reasons
 
-# Specify the path to the chromedriver executable
-chromedriver_path = '/usr/lib/chromium-browser/chromedriver'  # Adjust path if needed
-
 # Create a Service object with the path to the driver
 service = Service(executable_path=chromedriver_path)
 
 # Set up the WebDriver (Chrome with options)
 driver = webdriver.Chrome(service=service, options=chrome_options)
-
-# Define log file path
-log_file_path = '/var/indexing/fastindexing.log'
 
 # Function to prepend new logs to the beginning of the log file
 def prepend_log_to_file(log_message):
@@ -98,7 +97,7 @@ def setup_logging():
 def push_log_to_github():
     try:
         # Change to the directory of your Git repository
-        os.chdir('/var/indexing')  # Path to your GitHub repo
+        os.chdir(repo_directory)  # Path to your GitHub repo
 
         # Add the log file to the git staging area
         subprocess.run(['git', 'add', log_file_path], check=True)
