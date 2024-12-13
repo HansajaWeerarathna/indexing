@@ -1,0 +1,55 @@
+
+
+Processing started at: 2024-12-13 03:35:25
+
+
+Processing started at: 2024-12-13 03:35:15
+
+
+Processing started at: 2024-12-13 03:35:02
+Processing started at: 2024-12-13 03:35:02
+2024-12-13 03:35:02,310 - INFO - 
+
+Processing started at: 2024-12-13 03:35:02
+2024-12-13 03:35:02,310 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:05,000 - INFO - Navigated to the website.
+2024-12-13 03:35:05,000 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:05,009 - INFO - Page has finished loading.
+2024-12-13 03:35:05,342 - INFO - Overlay disappeared.
+2024-12-13 03:35:05,947 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:09,363 - INFO - Clicked the Submit button.
+2024-12-13 03:35:09,364 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:09,370 - INFO - Page has finished loading.
+2024-12-13 03:35:10,549 - INFO - Page refreshed after submission.
+2024-12-13 03:35:15,554 - INFO - Waiting before processing the next URL...
+
+2024-12-13 03:35:15,555 - INFO - 
+
+Processing started at: 2024-12-13 03:35:15
+2024-12-13 03:35:15,555 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:16,430 - INFO - Navigated to the website.
+2024-12-13 03:35:16,430 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:16,436 - INFO - Page has finished loading.
+2024-12-13 03:35:16,709 - INFO - Overlay disappeared.
+2024-12-13 03:35:17,129 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:19,247 - INFO - Clicked the Submit button.
+2024-12-13 03:35:19,247 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:19,260 - INFO - Page has finished loading.
+2024-12-13 03:35:20,376 - INFO - Page refreshed after submission.
+2024-12-13 03:35:25,377 - INFO - Waiting before processing the next URL...
+
+2024-12-13 03:35:25,377 - INFO - 
+
+Processing started at: 2024-12-13 03:35:25
+2024-12-13 03:35:25,377 - INFO - Processing URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:26,228 - INFO - Navigated to the website.
+2024-12-13 03:35:26,228 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:26,233 - INFO - Page has finished loading.
+2024-12-13 03:35:26,493 - INFO - Overlay disappeared.
+2024-12-13 03:35:26,947 - INFO - Entered URL: https://www.thenewsapi.com/sitemap.xml
+2024-12-13 03:35:29,244 - INFO - Clicked the Submit button.
+2024-12-13 03:35:29,244 - INFO - Waiting for the page to finish loading...
+2024-12-13 03:35:29,262 - INFO - Page has finished loading.
+2024-12-13 03:35:30,399 - INFO - Page refreshed after submission.
+2024-12-13 03:35:35,401 - INFO - Waiting before processing the next URL...
+
