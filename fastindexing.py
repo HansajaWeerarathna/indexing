@@ -9,9 +9,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # List of URLs (hardcoded)
 urls = [
-    "http://example1.com",
-    "http://example2.com",
-    "http://example3.com"
+    "https://gnews.io/sitemap.xml",
+    "https://gnews.io/sitemap.xml",
+    "https://gnews.io/sitemap.xml", 
+    'https://gnews.io/sitemap.xml', 
+    'https://gnews.io/sitemap.xml', 
+    'https://gnews.io/sitemap.xml', 
+    'https://gnews.io/sitemap.xml'
 ]
 
 # Set up Chrome options for headless mode
