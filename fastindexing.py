@@ -139,6 +139,9 @@ def click_element_js(driver, element):
 # Main function
 def process_urls():
     for url in urls:
+        # Add separation between each run
+        logger.info("\n----- New Run -----\n")
+        
         logger.info(f"Processing URL: {url}")
         
         # Open the website
