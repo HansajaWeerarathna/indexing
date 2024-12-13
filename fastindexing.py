@@ -63,7 +63,7 @@ service = Service(executable_path=chromedriver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Set up logging
-log_file_path = '/path/to/logfile.log'  # Path to the log file
+log_file_path = '/var/indexing/fastindexing.log'  # Path to the log file
 logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
