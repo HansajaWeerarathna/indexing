@@ -41,9 +41,9 @@ from selenium.webdriver.support import expected_conditions as EC
 #     'https://sitemap.americanbusinesses.space/sitemap.xml'
 # ]
 
-urls = ["https://gnews.io/sitemap.xml", 
-        "https://gnews.io/sitemap.xml", 
-        "https://gnews.io/sitemap.xml"
+urls = ["https://www.thenewsapi.com/sitemap.xml", 
+        "https://www.thenewsapi.com/sitemap.xml", 
+        "https://www.thenewsapi.com/sitemap.xml"
     ]
 
 # Set up Chrome options for headless mode
@@ -139,8 +139,10 @@ def click_element_js(driver, element):
 # Main function
 def process_urls():
     for url in urls:
-        # Add separation between each run
-        logger.info("\n----- New Run -----\n")
+        # Start a new run with a timestamp
+        log_title = f"\n\nProcessing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+        prepend_log_to_file(log_title)  # Prepend the header for each URL batch
+        logger.info(log_title)  # Log it to the logger as well
         
         logger.info(f"Processing URL: {url}")
         
