@@ -19,7 +19,6 @@ urls = [
     'https://bestbusinesses.space/random-sitemap.xml', 
     'https://bestbusinesses.space/random-sitemap.xml', 
     'https://bestbusinesses.space/random-sitemap.xml', 
-    'https://sitemap.bestbusinesses.space/sitemap.xml', 
     "https://ustopbusiness.online/sitemap.xml",
     "https://ustopbusiness.online/random-sitemap.xml",
     "https://ustopbusiness.online/random-sitemap.xml", 
@@ -33,13 +32,14 @@ urls = [
     'https://americantopbusiness.site/random-sitemap.xml', 
     'https://americantopbusiness.site/random-sitemap.xml', 
     'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://sitemap.americantopbusiness.site/sitemap.xml',
     "https://americanbusinesses.space/sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml", 
     'https://americanbusinesses.space/random-sitemap.xml', 
     'https://americanbusinesses.space/random-sitemap.xml', 
     'https://americanbusinesses.space/random-sitemap.xml', 
+    'https://sitemap.bestbusinesses.space/sitemap.xml', 
+    'https://sitemap.americantopbusiness.site/sitemap.xml',
     'https://sitemap.americanbusinesses.space/sitemap.xml'
 ]
 
@@ -47,8 +47,6 @@ urls = [
 #         "https://www.thenewsapi.com/sitemap.xml", 
 #         "https://www.thenewsapi.com/sitemap.xml"
 #     ]
-
-
 
 # Environment Variables for Configuration
 chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/lib/chromium-browser/chromedriver')
@@ -92,26 +90,9 @@ def setup_logging():
     log_title = f"Processing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
     prepend_log_to_file(log_title)  # Prepend the title to the log file
 
-    # Set up logging configuration
+    # Set up logging configuration (this will log entries below the header)
+    logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
-
-    # Log to file
-    file_handler = logging.FileHandler(log_file_path)
-    file_handler.setLevel(logging.INFO)
-    file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    file_handler.setFormatter(file_formatter)
-
-    # Log to console (terminal)
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    console_handler.setFormatter(console_formatter)
-
-    # Add handlers to the logger
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
-
     return logger
 
 # Function to push the log file to GitHub
@@ -134,18 +115,21 @@ def push_log_to_github():
         logger.error(f"Failed to push log file to GitHub: {e}")
 
 # Function to wait until the page has fully loaded by checking the document's ready state
-def wait_until_loaded(driver, max_wait_time=300):
+def wait_until_loaded(driver, max_wait_time=600):  # Increased wait time
     logger.info("Waiting for the page to finish loading...")
-    WebDriverWait(driver, max_wait_time).until(
-        lambda driver: driver.execute_script("return document.readyState") == "complete"
-    )
-    logger.info("Page has finished loading.")
+    try:
+        WebDriverWait(driver, max_wait_time).until(
+            lambda driver: driver.execute_script("return document.readyState") == "complete"
+        )
+        logger.info("Page has finished loading.")
 
-    # Wait for the page elements to be visible as well (e.g., form or buttons)
-    WebDriverWait(driver, max_wait_time).until(
-        EC.visibility_of_element_located((By.XPATH, '/html/body/section[2]/div/form/div/input'))
-    )
-    logger.info("Input field is visible and ready for interaction.")
+        # Wait for the page elements to be visible as well (e.g., form or buttons)
+        WebDriverWait(driver, max_wait_time).until(
+            EC.visibility_of_element_located((By.XPATH, '/html/body/section[2]/div/form/div/input'))
+        )
+        logger.info("Input field is visible and ready for interaction.")
+    except TimeoutException:
+        logger.error(f"Timeout occurred while waiting for the page to load within {max_wait_time} seconds.")
 
 # Function to wait for overlays or modals to disappear
 def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]', max_wait_time=10):
@@ -161,6 +145,15 @@ def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]
 # Function to click an element using JavaScript in case the normal click is blocked
 def click_element_js(driver, element):
     driver.execute_script("arguments[0].click();", element)
+
+# Function to click an element using ActionChains in case JavaScript clicking doesn't work
+def click_element_with_actionchains(driver, element):
+    try:
+        actions = ActionChains(driver)
+        actions.move_to_element(element).click().perform()  # Move to element and click
+        logger.info("Clicked the Submit button using ActionChains.")
+    except Exception as e:
+        logger.error(f"Failed to click the element with ActionChains: {e}")
 
 # Function to retry opening URL in case of timeout
 def fetch_url_with_retry(driver, url, retries=3, delay=5):
@@ -190,7 +183,9 @@ def process_urls():
         logger.info(f"Processing URL: {url}")
         
         # Open the website
-        driver.get("https://fastindex.wiki/")
+        if not fetch_url_with_retry(driver, "https://fastindex.wiki/"):  # Retry opening the site
+            continue
+        
         logger.info("Navigated to the website.")
         
         # Wait for the page to load
