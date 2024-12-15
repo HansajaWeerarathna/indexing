@@ -1,5 +1,27 @@
 
 
+Processing started at: 2024-12-14 23:36:21
+
+
+Processing started at: 2024-12-14 23:36:02
+
+
+Processing started at: 2024-12-14 23:35:43
+
+
+Processing started at: 2024-12-14 23:35:25
+
+
+Processing started at: 2024-12-14 23:35:05
+
+
+Processing started at: 2024-12-14 23:34:46
+
+
+Processing started at: 2024-12-14 23:34:28
+Processing started at: 2024-12-14 23:34:28
+
+
 Processing started at: 2024-12-14 23:23:10
 
 
@@ -172,3 +194,120 @@ Processing started at: 2024-12-14 23:23:10
 2024-12-14 23:27:13,259 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=59507): Read timed out. (read timeout=120)
 2024-12-14 23:27:13,259 - INFO - Closing the browser.
 2024-12-14 23:29:13,363 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=59507): Read timed out. (read timeout=120)")': /session/8679c77bfd2a8d2600780a76889d73d2
+2024-12-14 23:34:28,929 - INFO - 
+
+Processing started at: 2024-12-14 23:34:28
+2024-12-14 23:34:28,929 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-14 23:34:31,516 - INFO - Navigated to the website.
+2024-12-14 23:34:31,516 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:34:31,534 - INFO - Page has finished loading.
+2024-12-14 23:34:31,567 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:34:31,595 - INFO - Overlay disappeared.
+2024-12-14 23:34:32,530 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-14 23:34:37,525 - INFO - Clicked the Submit button.
+2024-12-14 23:34:37,525 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:34:37,770 - INFO - Page has finished loading.
+2024-12-14 23:34:37,810 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:34:41,806 - INFO - Page refreshed after submission.
+2024-12-14 23:34:46,811 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:34:46,812 - INFO - 
+
+Processing started at: 2024-12-14 23:34:46
+2024-12-14 23:34:46,812 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:34:47,825 - INFO - Navigated to the website.
+2024-12-14 23:34:47,825 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:34:47,837 - INFO - Page has finished loading.
+2024-12-14 23:34:48,134 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:34:48,151 - INFO - Overlay disappeared.
+2024-12-14 23:34:48,618 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:34:54,662 - INFO - Clicked the Submit button.
+2024-12-14 23:34:54,662 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:34:54,678 - INFO - Page has finished loading.
+2024-12-14 23:34:54,982 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:00,772 - INFO - Page refreshed after submission.
+2024-12-14 23:35:05,777 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:35:05,778 - INFO - 
+
+Processing started at: 2024-12-14 23:35:05
+2024-12-14 23:35:05,778 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:06,972 - INFO - Navigated to the website.
+2024-12-14 23:35:06,972 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:07,242 - INFO - Page has finished loading.
+2024-12-14 23:35:07,302 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:07,317 - INFO - Overlay disappeared.
+2024-12-14 23:35:07,944 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:14,346 - INFO - Clicked the Submit button.
+2024-12-14 23:35:14,346 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:14,594 - INFO - Page has finished loading.
+2024-12-14 23:35:14,630 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:20,015 - INFO - Page refreshed after submission.
+2024-12-14 23:35:25,021 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:35:25,022 - INFO - 
+
+Processing started at: 2024-12-14 23:35:25
+2024-12-14 23:35:25,022 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:25,931 - INFO - Navigated to the website.
+2024-12-14 23:35:25,931 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:26,147 - INFO - Page has finished loading.
+2024-12-14 23:35:26,198 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:26,215 - INFO - Overlay disappeared.
+2024-12-14 23:35:26,868 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:33,322 - INFO - Clicked the Submit button.
+2024-12-14 23:35:33,322 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:33,604 - INFO - Page has finished loading.
+2024-12-14 23:35:33,642 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:38,930 - INFO - Page refreshed after submission.
+2024-12-14 23:35:43,936 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:35:43,937 - INFO - 
+
+Processing started at: 2024-12-14 23:35:43
+2024-12-14 23:35:43,937 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:44,925 - INFO - Navigated to the website.
+2024-12-14 23:35:44,926 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:45,193 - INFO - Page has finished loading.
+2024-12-14 23:35:45,232 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:45,251 - INFO - Overlay disappeared.
+2024-12-14 23:35:45,801 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:35:52,343 - INFO - Clicked the Submit button.
+2024-12-14 23:35:52,343 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:35:52,354 - INFO - Page has finished loading.
+2024-12-14 23:35:52,375 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:35:57,362 - INFO - Page refreshed after submission.
+2024-12-14 23:36:02,365 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:36:02,367 - INFO - 
+
+Processing started at: 2024-12-14 23:36:02
+2024-12-14 23:36:02,367 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:36:03,335 - INFO - Navigated to the website.
+2024-12-14 23:36:03,335 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:36:03,636 - INFO - Page has finished loading.
+2024-12-14 23:36:03,666 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:36:03,686 - INFO - Overlay disappeared.
+2024-12-14 23:36:04,520 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-14 23:36:10,785 - INFO - Clicked the Submit button.
+2024-12-14 23:36:10,785 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:36:11,038 - INFO - Page has finished loading.
+2024-12-14 23:36:11,070 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:36:16,446 - INFO - Page refreshed after submission.
+2024-12-14 23:36:21,451 - INFO - Waiting before processing the next URL...
+
+2024-12-14 23:36:21,452 - INFO - 
+
+Processing started at: 2024-12-14 23:36:21
+2024-12-14 23:36:21,452 - INFO - Processing URL: https://sitemap.bestbusinesses.space/sitemap.xml
+2024-12-14 23:36:22,358 - INFO - Navigated to the website.
+2024-12-14 23:36:22,358 - INFO - Waiting for the page to finish loading...
+2024-12-14 23:36:22,371 - INFO - Page has finished loading.
+2024-12-14 23:36:22,643 - INFO - Input field is visible and ready for interaction.
+2024-12-14 23:36:22,660 - INFO - Overlay disappeared.
+2024-12-14 23:36:23,101 - INFO - Entered URL: https://sitemap.bestbusinesses.space/sitemap.xml
+2024-12-14 23:38:24,227 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=33345): Read timed out. (read timeout=120)
+2024-12-14 23:38:24,227 - INFO - Closing the browser.
+2024-12-14 23:40:07,051 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6aaf86b2e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/143a3432ed70cb3ce79bdea2c28f2313
+2024-12-14 23:40:07,052 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6aaf86b3a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/143a3432ed70cb3ce79bdea2c28f2313
+2024-12-14 23:40:07,052 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6aaf86b520>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/143a3432ed70cb3ce79bdea2c28f2313
