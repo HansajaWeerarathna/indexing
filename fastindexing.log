@@ -1,0 +1,10 @@
+
+
+Processing started at: 2024-12-15 00:51:52
+Processing started at: 2024-12-15 00:51:52
+2024-12-15 00:51:52,506 - INFO - 
+
+Processing started at: 2024-12-15 00:51:52
+2024-12-15 00:51:52,507 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 00:51:52,508 - ERROR - An error occurred: local variable 'driver' referenced before assignment
+2024-12-15 00:51:52,509 - INFO - Closing the browser.
