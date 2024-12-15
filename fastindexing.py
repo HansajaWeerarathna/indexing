@@ -8,6 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
 # List of URLs (hardcoded)
 urls = [
@@ -120,6 +122,12 @@ def wait_until_loaded(driver, max_wait_time=300):
     )
     logger.info("Page has finished loading.")
 
+    # Wait for the page elements to be visible as well (e.g., form or buttons)
+    WebDriverWait(driver, max_wait_time).until(
+        EC.visibility_of_element_located((By.XPATH, '/html/body/section[2]/div/form/div/input'))
+    )
+    logger.info("Input field is visible and ready for interaction.")
+
 # Function to wait for overlays or modals to disappear
 def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]', max_wait_time=10):
     try:
@@ -134,6 +142,15 @@ def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]
 # Function to click an element using JavaScript in case the normal click is blocked
 def click_element_js(driver, element):
     driver.execute_script("arguments[0].click();", element)
+
+# Function to click an element using ActionChains in case JavaScript clicking doesn't work
+def click_element_with_actionchains(driver, element):
+    try:
+        actions = ActionChains(driver)
+        actions.move_to_element(element).click().perform()  # Move to element and click
+        logger.info("Clicked the Submit button using ActionChains.")
+    except Exception as e:
+        logger.error(f"Failed to click the element with ActionChains: {e}")
 
 # Main function
 def process_urls():
@@ -182,7 +199,7 @@ def process_urls():
             # Wait for the page to load after submission
             wait_until_loaded(driver)
             
-        except Exception as e:
+        except (NoSuchElementException, TimeoutException) as e:
             logger.error(f"An error occurred while processing the URL {url}: {e}")
         
         # Refresh the page before going to the next URL
@@ -205,4 +222,5 @@ except Exception as e:
 finally:
     # Close the browser after processing all URLs
     logger.info("Closing the browser.")
+    driver.quit()
     driver.quit()
