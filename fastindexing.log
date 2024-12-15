@@ -1,5 +1,13 @@
 
 
+Processing started at: 2024-12-15 00:49:18
+Processing started at: 2024-12-15 00:49:18
+
+
+Processing started at: 2024-12-15 00:49:09
+Processing started at: 2024-12-15 00:49:09
+
+
 Processing started at: 2024-12-15 00:40:12
 
 
@@ -134,3 +142,15 @@ Processing started at: 2024-12-15 00:40:12
 2024-12-15 00:40:13,756 - INFO - Entered URL: https://ustopbusiness.online/sitemap.xml
 2024-12-15 00:42:14,883 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=57503): Read timed out. (read timeout=120)
 2024-12-15 00:42:14,883 - INFO - Closing the browser.
+2024-12-15 00:49:09,452 - INFO - 
+
+Processing started at: 2024-12-15 00:49:09
+2024-12-15 00:49:09,454 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 00:49:09,454 - ERROR - An error occurred: local variable 'driver' referenced before assignment
+2024-12-15 00:49:09,454 - INFO - Closing the browser.
+2024-12-15 00:49:18,721 - INFO - 
+
+Processing started at: 2024-12-15 00:49:18
+2024-12-15 00:49:18,721 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 00:49:18,722 - ERROR - An error occurred: local variable 'driver' referenced before assignment
+2024-12-15 00:49:18,722 - INFO - Closing the browser.
