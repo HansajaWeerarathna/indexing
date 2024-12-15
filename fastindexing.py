@@ -195,8 +195,8 @@ def fetch_url_with_retry(driver, url, retries=5, delay=10):
 def process_urls():
     global driver  # Declare driver as global to access it in finally block
 
-    # Initialize WebDriver with enhanced capabilities for network logging
-    driver = webdriver.Chrome(service=service, options=chrome_options, desired_capabilities=caps)
+    # Initialize WebDriver with enhanced capabilities for network logging (via chrome_options)
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # Counter to track how many URLs have been processed
     url_counter = 0
@@ -225,7 +225,7 @@ def process_urls():
             if url_counter >= max_urls_before_restart:
                 logger.info(f"Restarting WebDriver after processing {url_counter} URLs.")
                 driver.quit()  # Quit the current session
-                driver = webdriver.Chrome(service=service, options=chrome_options, desired_capabilities=caps)  # Restart driver
+                driver = webdriver.Chrome(service=service, options=chrome_options)  # Restart driver
                 url_counter = 0  # Reset URL counter
             
             # Optional: wait between URL fetches
@@ -234,6 +234,7 @@ def process_urls():
         logger.error(f"Error processing URLs: {e}")
     finally:
         driver.quit()  # Make sure to quit the WebDriver at the end
+ # Make sure to quit the WebDriver at the end
 
 # Run the script
 if __name__ == "__main__":
