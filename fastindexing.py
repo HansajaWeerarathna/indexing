@@ -91,8 +91,23 @@ def setup_logging():
     prepend_log_to_file(log_title)  # Prepend the title to the log file
 
     # Set up logging configuration (this will log entries below the header)
-    logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    # File handler for writing to log file
+    file_handler = logging.FileHandler(log_file_path)
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+    # Stream handler for real-time logging to console
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.INFO)
+    stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+    # Add both handlers to the logger
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler)
+
     return logger
 
 # Function to push the log file to GitHub
@@ -174,7 +189,18 @@ def fetch_url_with_retry(driver, url, retries=3, delay=5):
 
 # Main function
 def process_urls():
+    # Counter to track how many URLs have been processed
+    url_counter = 0
+    max_urls_before_restart = 5  # Restart the browser after processing 5 URLs
+
     for url in urls:
+        # If 5 URLs have been processed, restart the browser
+        if url_counter >= max_urls_before_restart:
+            logger.info("Restarting browser after processing 5 URLs.")
+            driver.quit()  # Close the current browser session
+            driver = webdriver.Chrome(service=service, options=chrome_options)  # Restart the browser
+            url_counter = 0  # Reset the counter
+
         # Start a new run with a timestamp
         log_title = f"\n\nProcessing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         prepend_log_to_file(log_title)  # Prepend the header for each URL batch
@@ -183,9 +209,7 @@ def process_urls():
         logger.info(f"Processing URL: {url}")
         
         # Open the website
-        if not fetch_url_with_retry(driver, "https://fastindex.wiki/"):  # Retry opening the site
-            continue
-        
+        driver.get("https://fastindex.wiki/")
         logger.info("Navigated to the website.")
         
         # Wait for the page to load
@@ -231,9 +255,13 @@ def process_urls():
         # Wait a little before moving on to the next URL
         time.sleep(5)  # Adjust the delay as needed
         logger.info("Waiting before processing the next URL...\n")
+        
+        # Increment the URL counter
+        url_counter += 1
     
     # After processing all URLs, push the log to GitHub
     push_log_to_github()
+
 
 # Run the script once (this will be called by the cron job)
 try:
