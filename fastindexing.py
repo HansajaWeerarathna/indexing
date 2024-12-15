@@ -263,6 +263,7 @@ def process_urls():
     push_log_to_github()
 
 
+
 # Run the script once (this will be called by the cron job)
 try:
     logger = setup_logging()  # Set up logging with the header prepended
