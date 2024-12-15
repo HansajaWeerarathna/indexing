@@ -152,6 +152,23 @@ def click_element_with_actionchains(driver, element):
     except Exception as e:
         logger.error(f"Failed to click the element with ActionChains: {e}")
 
+# Function to retry opening URL in case of timeout
+def fetch_url_with_retry(driver, url, retries=3, delay=5):
+    for attempt in range(retries):
+        try:
+            driver.get(url)
+            return True  # Success
+        except TimeoutException:
+            logger.error(f"Timeout while accessing {url} (Attempt {attempt + 1}/{retries})")
+            if attempt < retries - 1:
+                time.sleep(delay)
+            else:
+                logger.error(f"Failed to access {url} after {retries} attempts.")
+                return False
+        except Exception as e:
+            logger.error(f"Error accessing {url}: {e}")
+            return False
+
 # Main function
 def process_urls():
     for url in urls:
@@ -222,5 +239,4 @@ except Exception as e:
 finally:
     # Close the browser after processing all URLs
     logger.info("Closing the browser.")
-    driver.quit()
     driver.quit()
