@@ -204,7 +204,7 @@ def process_urls():
         logger.info(f"Processing URL: {url}")
         
         # Open the website
-        driver.get("https://fastindex.wiki/")
+        driver.get("https://fastindex.wiki/")  # Visit the page to process the URLs
         logger.info("Navigated to the website.")
         
         # Wait for the page to load
