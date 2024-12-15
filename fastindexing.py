@@ -200,7 +200,7 @@ def process_urls():
             driver.quit()  # Close the current browser session
             driver = webdriver.Chrome(service=service, options=chrome_options)  # Restart the browser
             url_counter = 0  # Reset the counter
-
+        
         # Start a new run with a timestamp
         log_title = f"\n\nProcessing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
         prepend_log_to_file(log_title)  # Prepend the header for each URL batch
@@ -261,7 +261,6 @@ def process_urls():
     
     # After processing all URLs, push the log to GitHub
     push_log_to_github()
-
 
 
 # Run the script once (this will be called by the cron job)
