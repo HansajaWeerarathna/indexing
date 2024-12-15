@@ -48,6 +48,8 @@ urls = [
 #         "https://www.thenewsapi.com/sitemap.xml"
 #     ]
 
+
+
 # Environment Variables for Configuration
 chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/lib/chromium-browser/chromedriver')
 repo_directory = os.getenv('REPO_DIRECTORY', '/var/indexing')
@@ -90,9 +92,26 @@ def setup_logging():
     log_title = f"Processing started at: {time.strftime('%Y-%m-%d %H:%M:%S')}"
     prepend_log_to_file(log_title)  # Prepend the title to the log file
 
-    # Set up logging configuration (this will log entries below the header)
-    logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    # Set up logging configuration
     logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    # Log to file
+    file_handler = logging.FileHandler(log_file_path)
+    file_handler.setLevel(logging.INFO)
+    file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(file_formatter)
+
+    # Log to console (terminal)
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    console_handler.setFormatter(console_formatter)
+
+    # Add handlers to the logger
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
     return logger
 
 # Function to push the log file to GitHub
@@ -142,15 +161,6 @@ def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]
 # Function to click an element using JavaScript in case the normal click is blocked
 def click_element_js(driver, element):
     driver.execute_script("arguments[0].click();", element)
-
-# Function to click an element using ActionChains in case JavaScript clicking doesn't work
-def click_element_with_actionchains(driver, element):
-    try:
-        actions = ActionChains(driver)
-        actions.move_to_element(element).click().perform()  # Move to element and click
-        logger.info("Clicked the Submit button using ActionChains.")
-    except Exception as e:
-        logger.error(f"Failed to click the element with ActionChains: {e}")
 
 # Function to retry opening URL in case of timeout
 def fetch_url_with_retry(driver, url, retries=3, delay=5):
