@@ -43,11 +43,6 @@ urls = [
     'https://sitemap.americanbusinesses.space/sitemap.xml'
 ]
 
-# urls = ["https://www.thenewsapi.com/sitemap.xml", 
-#         "https://www.thenewsapi.com/sitemap.xml", 
-#         "https://www.thenewsapi.com/sitemap.xml"
-#     ]
-
 # Environment Variables for Configuration
 chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/lib/chromium-browser/chromedriver')
 repo_directory = os.getenv('REPO_DIRECTORY', '/var/indexing')
@@ -61,9 +56,6 @@ chrome_options.add_argument("--no-sandbox")  # Disable the sandbox for security 
 
 # Create a Service object with the path to the driver
 service = Service(executable_path=chromedriver_path)
-
-# Set up the WebDriver (Chrome with options)
-driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Function to prepend new logs to the beginning of the log file
 def prepend_log_to_file(log_message):
@@ -189,6 +181,9 @@ def fetch_url_with_retry(driver, url, retries=3, delay=5):
 
 # Main function
 def process_urls():
+    global driver  # Declare driver as global to access it in finally block
+    driver = webdriver.Chrome(service=service, options=chrome_options)  # Initialize WebDriver
+
     # Counter to track how many URLs have been processed
     url_counter = 0
     max_urls_before_restart = 5  # Restart the browser after processing 5 URLs
@@ -272,4 +267,4 @@ except Exception as e:
 finally:
     # Close the browser after processing all URLs
     logger.info("Closing the browser.")
-    driver.quit()
+    driver.quit()  # Now driver is defined
