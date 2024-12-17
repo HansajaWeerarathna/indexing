@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Processing started at: 2024-12-15 14:00:01
 Processing started at: 2024-12-15 05:45:38
 Processing started at: 2024-12-15 05:30:53
@@ -1804,3 +1805,5 @@ Stacktrace:
 2024-12-15 14:13:47,538 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=58777): Read timed out. (read timeout=120)
 2024-12-15 14:13:47,539 - INFO - Closing the browser.
 2024-12-15 14:13:47,539 - INFO - Closing the browser.
+=======
+>>>>>>> a1e041d469ca2eafdae6abbfb889e635ccf5ae20
