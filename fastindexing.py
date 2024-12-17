@@ -9,11 +9,16 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, WebDriverException
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
 # List of URLs (hardcoded)
 urls = [
+    "https://americantopbusiness.site/sitemap.xml",
+    "https://americantopbusiness.site/random-sitemap.xml",
+    "https://americantopbusiness.site/random-sitemap.xml", 
+    'https://americantopbusiness.site/random-sitemap.xml', 
+    'https://americantopbusiness.site/random-sitemap.xml', 
+    'https://americantopbusiness.site/random-sitemap.xml', 
     "https://bestbusinesses.space/sitemap.xml",
     "https://bestbusinesses.space/random-sitemap.xml",
     "https://bestbusinesses.space/random-sitemap.xml", 
@@ -26,13 +31,6 @@ urls = [
     'https://ustopbusiness.online/random-sitemap.xml', 
     'https://ustopbusiness.online/random-sitemap.xml', 
     'https://ustopbusiness.online/random-sitemap.xml', 
-    'https://sitemap.ustopbusiness.online/sitemap.xml', 
-    "https://americantopbusiness.site/sitemap.xml",
-    "https://americantopbusiness.site/random-sitemap.xml",
-    "https://americantopbusiness.site/random-sitemap.xml", 
-    'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://americantopbusiness.site/random-sitemap.xml', 
-    'https://americantopbusiness.site/random-sitemap.xml', 
     "https://americanbusinesses.space/sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml", 
@@ -41,7 +39,8 @@ urls = [
     'https://americanbusinesses.space/random-sitemap.xml', 
     'https://sitemap.bestbusinesses.space/sitemap.xml', 
     'https://sitemap.americantopbusiness.site/sitemap.xml',
-    'https://sitemap.americanbusinesses.space/sitemap.xml'
+    'https://sitemap.americanbusinesses.space/sitemap.xml', 
+    'https://sitemap.ustopbusiness.online/sitemap.xml', 
 ]
 
 # Environment Variables for Configuration
@@ -54,12 +53,6 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run browser in headless mode
 chrome_options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
 chrome_options.add_argument("--no-sandbox")  # Disable the sandbox for security reasons
-chrome_options.add_argument("--no-proxy-server")  # Ensure no proxy is being used
-chrome_options.add_argument("--proxy-server='direct://'")  # Bypass proxy settings
-
-# Enable logging for ChromeDriver (for network issues)
-caps = DesiredCapabilities.CHROME
-caps['loggingPrefs'] = {'performance': 'ALL'}  # Enable network logs
 
 # Create a Service object with the path to the driver
 service = Service(executable_path=chromedriver_path)
@@ -129,7 +122,7 @@ def push_log_to_github():
         logger.error(f"Failed to push log file to GitHub: {e}")
 
 # Function to wait until the page has fully loaded by checking the document's ready state
-def wait_until_loaded(driver, max_wait_time=1200):  # Increased max wait time
+def wait_until_loaded(driver, max_wait_time=600):  # Increased wait time
     logger.info("Waiting for the page to finish loading...")
     try:
         WebDriverWait(driver, max_wait_time).until(
@@ -145,99 +138,137 @@ def wait_until_loaded(driver, max_wait_time=1200):  # Increased max wait time
     except TimeoutException:
         logger.error(f"Timeout occurred while waiting for the page to load within {max_wait_time} seconds.")
 
-# Function to wait for overlays or modals to disappear
-def wait_for_overlay_to_disappear(driver, overlay_xpath='//div[@class="overlay"]', max_wait_time=10):
-    try:
-        # Wait until the overlay disappears (you may need to adjust the XPath for your page)
-        WebDriverWait(driver, max_wait_time).until(
-            EC.invisibility_of_element_located((By.XPATH, overlay_xpath))
-        )
-        logger.info("Overlay disappeared.")
-    except Exception as e:
-        logger.warning(f"Overlay did not disappear in time: {e}")
+# Function to ensure element is clickable by waiting for visibility and clickability
+def wait_for_clickable_element(driver, element, max_wait_time=30):
+    for attempt in range(3):  # Retry up to 3 times
+        try:
+            WebDriverWait(driver, max_wait_time).until(
+                EC.visibility_of(element)  # Ensure element is visible
+            )
+            WebDriverWait(driver, max_wait_time).until(
+                EC.element_to_be_clickable(element)  # Ensure element is clickable
+            )
+            logger.info(f"Element is visible and clickable.")
+            return True
+        except TimeoutException:
+            logger.error(f"Element not clickable within {max_wait_time} seconds. Retrying...")
+            time.sleep(1)  # Wait a moment before retrying
+            # Re-locate the element here if needed
+    return False
 
 # Function to click an element using JavaScript in case the normal click is blocked
 def click_element_js(driver, element):
-    driver.execute_script("arguments[0].click();", element)
-
-# Function to click an element using ActionChains in case JavaScript clicking doesn't work
-def click_element_with_actionchains(driver, element):
     try:
-        actions = ActionChains(driver)
-        actions.move_to_element(element).click().perform()  # Move to element and click
-        logger.info("Clicked the Submit button using ActionChains.")
+        # Use JavaScript to click the element
+        driver.execute_script("arguments[0].click();", element)
+        logger.info("Clicked the element using JavaScript.")
     except Exception as e:
-        logger.error(f"Failed to click the element with ActionChains: {e}")
+        logger.error(f"Failed to click the element using JavaScript: {e}")
 
-# Function to retry opening URL in case of timeout
-def fetch_url_with_retry(driver, url, retries=5, delay=10):
+# Function to submit the form with retries
+def submit_form_with_retry(driver, search_box, submit_button, url, retries=3, delay=10):
     for attempt in range(retries):
         try:
-            driver.get(url)
-            logger.info(f"Successfully accessed URL: {url}")
-            return True  # Success
-        except TimeoutException:
-            logger.error(f"Timeout while accessing {url} (Attempt {attempt + 1}/{retries})")
-        except WebDriverException as e:
-            logger.error(f"WebDriver exception while accessing {url}: {e}")
-        except Exception as e:
-            logger.error(f"General exception while accessing {url}: {e}")
-        
-        # Retry logic
-        if attempt < retries - 1:
-            logger.info(f"Retrying in {delay} seconds...")
-            time.sleep(delay)
-        else:
-            logger.error(f"Failed to access {url} after {retries} attempts.")
-            return False
+            # Clear and fill out the form
+            search_box.clear()
+            search_box.send_keys(url)
+            logger.info(f"Entered URL: {url}")
 
-# Main function
+            # Scroll the submit button into view
+            driver.execute_script("arguments[0].scrollIntoView(true);", submit_button)
+
+            # Ensure submit button is clickable
+            if wait_for_clickable_element(driver, submit_button):
+                # Click the submit button using normal click or JS fallback
+                try:
+                    submit_button.click()
+                    logger.info("Clicked the Submit button.")
+                except Exception as e:
+                    logger.warning(f"Normal click failed, trying JavaScript: {e}")
+                    click_element_js(driver, submit_button)
+
+                # Wait for the page to load after form submission
+                wait_until_loaded(driver)
+                return True  # Success
+
+        except (NoSuchElementException, TimeoutException) as e:
+            logger.error(f"Attempt {attempt + 1}: Failed to submit the form. Error: {e}")
+            if attempt < retries - 1:
+                time.sleep(delay)
+            else:
+                logger.error(f"Failed to submit the form after {retries} attempts.")
+                return False
+
+# Function to process URLs in batches
+def process_batch(driver, urls_batch):
+    global logger
+    for url in urls_batch:
+        logger.info(f"Processing URL: {url}")
+
+        # Open the website
+        driver.get("https://fastindex.wiki/")  # Visit the page to process the URLs
+        logger.info("Navigated to the website.")
+
+        # Wait for the page to load
+        wait_until_loaded(driver)
+
+        try:
+            # Find the input field and submit button by their XPath
+            search_box = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/div/input")  # URL input field
+            submit_button = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/button")  # Submit button
+
+            # Wait for the input field and submit button to be interactable
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(search_box))
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(submit_button))
+
+            # Submit the form with retries
+            if not submit_form_with_retry(driver, search_box, submit_button, url):
+                logger.error(f"Failed to submit URL: {url} after retries.")
+                continue
+
+        except (NoSuchElementException, TimeoutException) as e:
+            logger.error(f"An error occurred while processing the URL {url}: {e}")
+
+        # Refresh the page before going to the next URL
+        driver.refresh()
+        logger.info("Page refreshed after submission.")
+
+        # Wait a little before moving on to the next URL
+        time.sleep(5)  # Adjust the delay as needed
+        logger.info("Waiting before processing the next URL...\n")
+
+# Main function to process URLs in batches and restart the browser as needed
 def process_urls():
     global driver  # Declare driver as global to access it in finally block
+    driver = webdriver.Chrome(service=service, options=chrome_options)  # Initialize WebDriver
 
-    # Initialize WebDriver with enhanced capabilities for network logging (via chrome_options)
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    # Split the URLs into batches of 5
+    batch_size = 5
+    url_batches = [urls[i:i + batch_size] for i in range(0, len(urls), batch_size)]
 
-    # Counter to track how many URLs have been processed
-    url_counter = 0
-    max_urls_before_restart = 5  # Restart the browser after processing 5 URLs
-    try:
-        for url in urls:
-            url_counter += 1
-            logger.info(f"Processing URL #{url_counter}: {url}")
-            
-            # Fetch URL with retry logic
-            if fetch_url_with_retry(driver, url):
-                wait_until_loaded(driver)
+    # Process each batch
+    for batch_num, batch in enumerate(url_batches, 1):
+        logger.info(f"\nProcessing batch {batch_num} of {len(url_batches)}...")
+        process_batch(driver, batch)
 
-                # Additional actions you may want to do with the page
-                # For example, filling out a form or interacting with elements
-                try:
-                    input_field = driver.find_element(By.XPATH, '/html/body/section[2]/div/form/div/input')
-                    input_field.send_keys('Some data')
-                    submit_button = driver.find_element(By.XPATH, '/html/body/section[2]/div/form/div/button')
-                    submit_button.click()
-                    logger.info(f"Form submitted on {url}")
-                except NoSuchElementException:
-                    logger.error(f"Form elements not found on {url}")
-            
-            # Check if it's time to restart WebDriver
-            if url_counter >= max_urls_before_restart:
-                logger.info(f"Restarting WebDriver after processing {url_counter} URLs.")
-                driver.quit()  # Quit the current session
-                driver = webdriver.Chrome(service=service, options=chrome_options)  # Restart driver
-                url_counter = 0  # Reset URL counter
-            
-            # Optional: wait between URL fetches
-            time.sleep(5)  # Adjust as necessary
-    except Exception as e:
-        logger.error(f"Error processing URLs: {e}")
-    finally:
-        driver.quit()  # Make sure to quit the WebDriver at the end
- # Make sure to quit the WebDriver at the end
+        # Close the browser and wait 1 minute before starting the next batch
+        driver.quit()
+        logger.info(f"Batch {batch_num} completed. Closing the browser and waiting for 1 minute before the next batch.")
+        time.sleep(60)  # Wait for 1 minute before the next batch
 
-# Run the script
-if __name__ == "__main__":
-    logger = setup_logging()
+        # Reinitialize the browser for the next batch
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    # After processing all batches, push the log to GitHub
+    push_log_to_github()
+
+# Run the script once (this will be called by the cron job)
+try:
+    logger = setup_logging()  # Set up logging with the header prepended
     process_urls()
-    push_log_to_github()  # Optional, if you want to push the log to GitHub after processing
+except Exception as e:
+    logger.error(f"An error occurred: {e}")
+finally:
+    # Close the browser after processing all URLs
+    logger.info("Closing the browser.")
+    driver.quit()  # Now driver is defined

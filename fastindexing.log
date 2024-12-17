@@ -1,1 +1,1806 @@
+Processing started at: 2024-12-15 14:00:01
+Processing started at: 2024-12-15 05:45:38
+Processing started at: 2024-12-15 05:30:53
+Processing started at: 2024-12-15 02:40:33
+Processing started at: 2024-12-15 02:32:52
+Processing started at: 2024-12-15 02:28:54
+Processing started at: 2024-12-15 02:24:39
+Processing started at: 2024-12-15 02:16:38
+Processing started at: 2024-12-15 02:09:26
+Processing started at: 2024-12-15 02:03:02
+Processing started at: 2024-12-15 01:54:41
+Processing started at: 2024-12-15 01:50:28
+Processing started at: 2024-12-15 01:49:19
+Processing started at: 2024-12-15 01:47:09
+Processing started at: 2024-12-15 01:44:59
+Processing started at: 2024-12-15 01:34:46
+Processing started at: 2024-12-15 01:26:21
 Processing started at: 2024-12-15 01:23:53
+2024-12-15 01:26:22,307 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:26:23,075 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:26:23,076 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:26:23,098 - INFO - Page has finished loading.
+2024-12-15 01:32:25,560 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/945e3891d580dc8e86f5e473c7f70977
+2024-12-15 01:32:25,561 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/945e3891d580dc8e86f5e473c7f70977
+2024-12-15 01:32:25,562 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3714d43f40>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/945e3891d580dc8e86f5e473c7f70977
+2024-12-15 01:34:47,976 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:34:48,702 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:34:48,702 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:34:48,725 - INFO - Page has finished loading.
+2024-12-15 01:44:29,595 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/920ed26ef898635f3bc9afeceb1f09f3
+2024-12-15 01:44:29,598 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fdcb983a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/920ed26ef898635f3bc9afeceb1f09f3
+2024-12-15 01:44:29,602 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fdcb98430>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/920ed26ef898635f3bc9afeceb1f09f3
+2024-12-15 01:45:01,335 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:45:02,312 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:45:02,312 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:45:02,345 - INFO - Page has finished loading.
+2024-12-15 01:45:15,840 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/0e09aa4a156caa5e7d9186a28c096bf0
+2024-12-15 01:45:15,844 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d93df7cd0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0e09aa4a156caa5e7d9186a28c096bf0
+2024-12-15 01:45:15,848 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d93df7eb0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0e09aa4a156caa5e7d9186a28c096bf0
+2024-12-15 01:47:11,123 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:47:11,938 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:47:11,939 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:47:11,960 - INFO - Page has finished loading.
+2024-12-15 01:47:18,845 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/75241238aa767b8e855c3019438a8cce
+2024-12-15 01:47:18,850 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4589707d60>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/75241238aa767b8e855c3019438a8cce
+2024-12-15 01:47:18,853 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4589707e50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/75241238aa767b8e855c3019438a8cce
+2024-12-15 01:49:21,172 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:49:21,934 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:49:21,934 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:49:21,971 - INFO - Page has finished loading.
+2024-12-15 01:50:17,222 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/3219bcd347fe7a73144986bc8de7c01d
+2024-12-15 01:50:17,227 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9390837cd0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/3219bcd347fe7a73144986bc8de7c01d
+2024-12-15 01:50:17,231 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9390837eb0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/3219bcd347fe7a73144986bc8de7c01d
+2024-12-15 01:50:30,219 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:50:30,978 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:50:30,978 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:50:31,002 - INFO - Page has finished loading.
+2024-12-15 01:52:01,439 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/8cfc01fa6750eb6bd3009c530427c9ca
+2024-12-15 01:52:01,446 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa0ae1f3d00>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8cfc01fa6750eb6bd3009c530427c9ca
+2024-12-15 01:52:01,450 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa0ae1f3f10>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8cfc01fa6750eb6bd3009c530427c9ca
+2024-12-15 01:54:42,516 - INFO - Processing URL #1: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:54:43,267 - INFO - Successfully accessed URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 01:54:43,268 - INFO - Waiting for the page to finish loading...
+2024-12-15 01:54:43,290 - INFO - Page has finished loading.
+2024-12-15 02:00:45,390 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/0f99e9284297c1d2f30c3f7a82df9920
+2024-12-15 02:00:45,394 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc012447dc0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0f99e9284297c1d2f30c3f7a82df9920
+2024-12-15 02:00:45,398 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc012447f70>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0f99e9284297c1d2f30c3f7a82df9920
+2024-12-15 02:03:03,701 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:03:03,703 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 02:03:06,490 - INFO - Navigated to the website.
+2024-12-15 02:03:06,494 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:06,509 - INFO - Page has finished loading.
+2024-12-15 02:03:06,553 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:07,455 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 02:03:12,717 - INFO - Clicked the Submit button.
+2024-12-15 02:03:12,719 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:13,011 - INFO - Page has finished loading.
+2024-12-15 02:03:13,084 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:16,973 - INFO - Page refreshed after submission.
+2024-12-15 02:03:21,979 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:03:21,979 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:03:22,958 - INFO - Navigated to the website.
+2024-12-15 02:03:22,960 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:23,239 - INFO - Page has finished loading.
+2024-12-15 02:03:23,299 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:24,126 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:03:30,152 - INFO - Clicked the Submit button.
+2024-12-15 02:03:30,153 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:30,161 - INFO - Page has finished loading.
+2024-12-15 02:03:30,521 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:36,094 - INFO - Page refreshed after submission.
+2024-12-15 02:03:41,100 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:03:41,102 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:03:42,153 - INFO - Navigated to the website.
+2024-12-15 02:03:42,154 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:42,170 - INFO - Page has finished loading.
+2024-12-15 02:03:42,454 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:42,960 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:03:49,387 - INFO - Clicked the Submit button.
+2024-12-15 02:03:49,388 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:03:49,643 - INFO - Page has finished loading.
+2024-12-15 02:03:49,703 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:03:55,043 - INFO - Page refreshed after submission.
+2024-12-15 02:04:00,049 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:04:00,050 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:04:00,904 - INFO - Navigated to the website.
+2024-12-15 02:04:00,904 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:04:00,920 - INFO - Page has finished loading.
+2024-12-15 02:04:01,189 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:04:01,764 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:04:07,973 - INFO - Clicked the Submit button.
+2024-12-15 02:04:07,975 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:04:08,274 - INFO - Page has finished loading.
+2024-12-15 02:04:08,302 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:04:13,954 - INFO - Page refreshed after submission.
+2024-12-15 02:04:18,960 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:04:18,960 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:04:19,891 - INFO - Navigated to the website.
+2024-12-15 02:04:19,892 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:04:20,165 - INFO - Page has finished loading.
+2024-12-15 02:04:20,205 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:04:20,757 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:04:27,315 - INFO - Clicked the Submit button.
+2024-12-15 02:04:27,316 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:04:27,330 - INFO - Page has finished loading.
+2024-12-15 02:04:27,646 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:04:32,715 - INFO - Page refreshed after submission.
+2024-12-15 02:04:37,721 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:04:38,864 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 02:05:40,165 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 02:05:40,170 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:05:42,635 - INFO - Navigated to the website.
+2024-12-15 02:05:42,636 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:05:42,658 - INFO - Page has finished loading.
+2024-12-15 02:05:43,025 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:05:43,715 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:05:50,361 - INFO - Clicked the Submit button.
+2024-12-15 02:05:50,362 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:05:50,653 - INFO - Page has finished loading.
+2024-12-15 02:05:50,685 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:05:56,459 - INFO - Page refreshed after submission.
+2024-12-15 02:06:01,465 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:06:01,467 - INFO - Processing URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 02:06:02,645 - INFO - Navigated to the website.
+2024-12-15 02:06:02,652 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:06:02,971 - INFO - Page has finished loading.
+2024-12-15 02:06:02,998 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:06:03,560 - INFO - Entered URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 02:08:04,831 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=50037): Read timed out. (read timeout=120)
+2024-12-15 02:08:04,832 - INFO - Closing the browser.
+2024-12-15 02:09:27,698 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:09:27,705 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 02:09:29,955 - INFO - Navigated to the website.
+2024-12-15 02:09:29,955 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:09:29,972 - INFO - Page has finished loading.
+2024-12-15 02:09:30,011 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:09:30,880 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 02:09:35,989 - INFO - Clicked the Submit button.
+2024-12-15 02:09:35,990 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:09:36,009 - INFO - Page has finished loading.
+2024-12-15 02:09:36,340 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:09:40,257 - INFO - Page refreshed after submission.
+2024-12-15 02:09:45,264 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:09:45,265 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:09:46,220 - INFO - Navigated to the website.
+2024-12-15 02:09:46,220 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:09:46,227 - INFO - Page has finished loading.
+2024-12-15 02:09:46,515 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:09:47,307 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:09:53,974 - INFO - Clicked the Submit button.
+2024-12-15 02:09:53,975 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:09:54,219 - INFO - Page has finished loading.
+2024-12-15 02:09:54,260 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:09:59,400 - INFO - Page refreshed after submission.
+2024-12-15 02:10:04,406 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:10:04,407 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:05,289 - INFO - Navigated to the website.
+2024-12-15 02:10:05,289 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:05,304 - INFO - Page has finished loading.
+2024-12-15 02:10:05,586 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:06,165 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:12,493 - INFO - Clicked the Submit button.
+2024-12-15 02:10:12,494 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:12,769 - INFO - Page has finished loading.
+2024-12-15 02:10:12,795 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:18,058 - INFO - Page refreshed after submission.
+2024-12-15 02:10:23,064 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:10:23,064 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:23,926 - INFO - Navigated to the website.
+2024-12-15 02:10:23,926 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:24,229 - INFO - Page has finished loading.
+2024-12-15 02:10:24,259 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:24,723 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:31,085 - INFO - Clicked the Submit button.
+2024-12-15 02:10:31,086 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:31,422 - INFO - Page has finished loading.
+2024-12-15 02:10:31,456 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:36,697 - INFO - Page refreshed after submission.
+2024-12-15 02:10:41,702 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:10:41,703 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:42,643 - INFO - Navigated to the website.
+2024-12-15 02:10:42,644 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:42,658 - INFO - Page has finished loading.
+2024-12-15 02:10:43,036 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:43,714 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:10:49,985 - INFO - Clicked the Submit button.
+2024-12-15 02:10:49,988 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:10:50,280 - INFO - Page has finished loading.
+2024-12-15 02:10:50,322 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:10:55,872 - INFO - Page refreshed after submission.
+2024-12-15 02:11:00,873 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:11:01,979 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 02:12:03,152 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 02:12:03,155 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:12:05,685 - INFO - Navigated to the website.
+2024-12-15 02:12:05,686 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:12:05,704 - INFO - Page has finished loading.
+2024-12-15 02:12:06,112 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:12:06,771 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 02:12:13,051 - INFO - Clicked the Submit button.
+2024-12-15 02:12:13,051 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:12:13,066 - INFO - Page has finished loading.
+2024-12-15 02:12:13,340 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:12:18,306 - INFO - Page refreshed after submission.
+2024-12-15 02:12:23,311 - INFO - Waiting before processing the next URL...
+
+2024-12-15 02:12:23,313 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:12:24,332 - INFO - Navigated to the website.
+2024-12-15 02:12:24,333 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:12:24,350 - INFO - Page has finished loading.
+2024-12-15 02:12:24,634 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:12:25,361 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:14:26,483 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=49059): Read timed out. (read timeout=120)
+2024-12-15 02:14:26,487 - INFO - Closing the browser.
+2024-12-15 02:16:39,483 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:16:39,484 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:16:41,919 - INFO - Navigated to the website.
+2024-12-15 02:16:41,921 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:16:41,942 - INFO - Page has finished loading.
+2024-12-15 02:16:42,327 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:16:43,037 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:18:44,213 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=45837): Read timed out. (read timeout=120)
+2024-12-15 02:18:44,216 - INFO - Closing the browser.
+2024-12-15 02:24:41,153 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:24:41,164 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:24:43,486 - INFO - Successfully accessed https://fastindex.wiki/
+2024-12-15 02:24:43,487 - INFO - Navigated to the website.
+2024-12-15 02:24:43,488 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:24:43,501 - INFO - Page has finished loading.
+2024-12-15 02:24:43,544 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:24:44,418 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:26:45,684 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=48111): Read timed out. (read timeout=120)
+2024-12-15 02:26:45,686 - INFO - Closing the browser.
+2024-12-15 02:28:55,596 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:28:55,600 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:28:58,079 - INFO - Navigated to the website.
+2024-12-15 02:28:58,080 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:28:58,095 - INFO - Page has finished loading.
+2024-12-15 02:28:58,128 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:28:58,996 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:29:00,226 - ERROR - An error occurred: Message: element click intercepted: Element is not clickable at point (382, 469)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c34c1aa8da <unknown>
+#1 0x55c34bcd4530 <unknown>
+#2 0x55c34bd29186 <unknown>
+#3 0x55c34bd27109 <unknown>
+#4 0x55c34bd2485d <unknown>
+#5 0x55c34bd23a1f <unknown>
+#6 0x55c34bd17265 <unknown>
+#7 0x55c34bd46412 <unknown>
+#8 0x55c34bd16ba8 <unknown>
+#9 0x55c34bd465de <unknown>
+#10 0x55c34bd649e7 <unknown>
+#11 0x55c34bd461b3 <unknown>
+#12 0x55c34bd14e92 <unknown>
+#13 0x55c34bd15e6e <unknown>
+#14 0x55c34c17933f <unknown>
+#15 0x55c34c17d45d <unknown>
+#16 0x55c34c167987 <unknown>
+#17 0x55c34c17dbd1 <unknown>
+#18 0x55c34c14f72e <unknown>
+#19 0x55c34c1995e8 <unknown>
+#20 0x55c34c1997ea <unknown>
+#21 0x55c34c1a9548 <unknown>
+#22 0x7f7872f14ac3 <unknown>
+
+2024-12-15 02:29:00,229 - INFO - Closing the browser.
+2024-12-15 02:32:53,554 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:32:53,556 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:32:55,787 - INFO - Navigated to the website.
+2024-12-15 02:32:55,789 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:32:55,812 - INFO - Page has finished loading.
+2024-12-15 02:32:56,186 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:32:56,874 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:32:57,029 - INFO - Element is visible and clickable.
+2024-12-15 02:34:57,132 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=48279): Read timed out. (read timeout=120)
+2024-12-15 02:36:07,991 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55f2f4ae98da <unknown>
+#1 0x55f2f4613530 <unknown>
+#2 0x55f2f4624d7b <unknown>
+#3 0x55f2f4623b05 <unknown>
+#4 0x55f2f4619b29 <unknown>
+#5 0x55f2f4619c55 <unknown>
+#6 0x55f2f4617e90 <unknown>
+#7 0x55f2f461ba4e <unknown>
+#8 0x55f2f46a4a8c <unknown>
+#9 0x55f2f4685412 <unknown>
+#10 0x55f2f46a39e7 <unknown>
+#11 0x55f2f46851b3 <unknown>
+#12 0x55f2f4653e92 <unknown>
+#13 0x55f2f4654e6e <unknown>
+#14 0x55f2f4ab833f <unknown>
+#15 0x55f2f4abc45d <unknown>
+#16 0x55f2f4aa6987 <unknown>
+#17 0x55f2f4abcbd1 <unknown>
+#18 0x55f2f4a8e72e <unknown>
+#19 0x55f2f4ad85e8 <unknown>
+#20 0x55f2f4ad87ea <unknown>
+#21 0x55f2f4ae8548 <unknown>
+#22 0x7fd89b8a2ac3 <unknown>
+
+2024-12-15 02:36:08,003 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:36:08,016 - INFO - Page has finished loading.
+2024-12-15 02:36:08,054 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:38:08,155 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=48279): Read timed out. (read timeout=120)
+2024-12-15 02:38:08,156 - INFO - Closing the browser.
+2024-12-15 02:40:34,965 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 02:40:34,967 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:40:37,513 - INFO - Navigated to the website.
+2024-12-15 02:40:37,513 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:40:37,521 - INFO - Page has finished loading.
+2024-12-15 02:40:37,563 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:40:38,659 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 02:40:38,743 - INFO - Element is visible and clickable.
+2024-12-15 02:42:38,843 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=49587): Read timed out. (read timeout=120)
+2024-12-15 02:43:47,336 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x557f492d58da <unknown>
+#1 0x557f48dff530 <unknown>
+#2 0x557f48e10d7b <unknown>
+#3 0x557f48e0fb05 <unknown>
+#4 0x557f48e05b29 <unknown>
+#5 0x557f48e05c55 <unknown>
+#6 0x557f48e03e90 <unknown>
+#7 0x557f48e07a4e <unknown>
+#8 0x557f48e90a8c <unknown>
+#9 0x557f48e71412 <unknown>
+#10 0x557f48e8f9e7 <unknown>
+#11 0x557f48e711b3 <unknown>
+#12 0x557f48e3fe92 <unknown>
+#13 0x557f48e40e6e <unknown>
+#14 0x557f492a433f <unknown>
+#15 0x557f492a845d <unknown>
+#16 0x557f49292987 <unknown>
+#17 0x557f492a8bd1 <unknown>
+#18 0x557f4927a72e <unknown>
+#19 0x557f492c45e8 <unknown>
+#20 0x557f492c47ea <unknown>
+#21 0x557f492d4548 <unknown>
+#22 0x7fdd2d4d8ac3 <unknown>
+
+2024-12-15 02:43:47,340 - INFO - Waiting for the page to finish loading...
+2024-12-15 02:43:47,362 - INFO - Page has finished loading.
+2024-12-15 02:43:47,686 - INFO - Input field is visible and ready for interaction.
+2024-12-15 02:45:47,787 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=49587): Read timed out. (read timeout=120)
+2024-12-15 02:45:47,789 - INFO - Closing the browser.
+2024-12-15 05:30:55,147 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 05:30:55,149 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 05:30:57,685 - INFO - Navigated to the website.
+2024-12-15 05:30:57,688 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:30:57,700 - INFO - Page has finished loading.
+2024-12-15 05:30:57,742 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:30:58,672 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 05:30:58,933 - INFO - Element is visible and clickable.
+2024-12-15 05:31:00,127 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element <button type="button" class="btn btn-primary w-100" onclick="submitForm()">...</button> is not clickable at point (382, 27). Other element would receive the click: <div class="container">...</div>
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x558e90e058da <unknown>
+#1 0x558e9092f530 <unknown>
+#2 0x558e90984186 <unknown>
+#3 0x558e90982109 <unknown>
+#4 0x558e9097f85d <unknown>
+#5 0x558e9097ea1f <unknown>
+#6 0x558e90972265 <unknown>
+#7 0x558e909a1412 <unknown>
+#8 0x558e90971ba8 <unknown>
+#9 0x558e909a15de <unknown>
+#10 0x558e909bf9e7 <unknown>
+#11 0x558e909a11b3 <unknown>
+#12 0x558e9096fe92 <unknown>
+#13 0x558e90970e6e <unknown>
+#14 0x558e90dd433f <unknown>
+#15 0x558e90dd845d <unknown>
+#16 0x558e90dc2987 <unknown>
+#17 0x558e90dd8bd1 <unknown>
+#18 0x558e90daa72e <unknown>
+#19 0x558e90df45e8 <unknown>
+#20 0x558e90df47ea <unknown>
+#21 0x558e90e04548 <unknown>
+#22 0x7f9585de6ac3 <unknown>
+
+2024-12-15 05:31:04,528 - INFO - Clicked the element using JavaScript.
+2024-12-15 05:31:04,531 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:04,891 - INFO - Page has finished loading.
+2024-12-15 05:31:04,921 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:08,989 - INFO - Page refreshed after submission.
+2024-12-15 05:31:13,996 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:31:13,997 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:15,122 - INFO - Navigated to the website.
+2024-12-15 05:31:15,123 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:15,388 - INFO - Page has finished loading.
+2024-12-15 05:31:15,429 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:16,079 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:16,175 - INFO - Element is visible and clickable.
+2024-12-15 05:31:17,268 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 462)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x558e90e058da <unknown>
+#1 0x558e9092f530 <unknown>
+#2 0x558e90984186 <unknown>
+#3 0x558e90982109 <unknown>
+#4 0x558e9097f85d <unknown>
+#5 0x558e9097ea1f <unknown>
+#6 0x558e90972265 <unknown>
+#7 0x558e909a1412 <unknown>
+#8 0x558e90971ba8 <unknown>
+#9 0x558e909a15de <unknown>
+#10 0x558e909bf9e7 <unknown>
+#11 0x558e909a11b3 <unknown>
+#12 0x558e9096fe92 <unknown>
+#13 0x558e90970e6e <unknown>
+#14 0x558e90dd433f <unknown>
+#15 0x558e90dd845d <unknown>
+#16 0x558e90dc2987 <unknown>
+#17 0x558e90dd8bd1 <unknown>
+#18 0x558e90daa72e <unknown>
+#19 0x558e90df45e8 <unknown>
+#20 0x558e90df47ea <unknown>
+#21 0x558e90e04548 <unknown>
+#22 0x7f9585de6ac3 <unknown>
+
+2024-12-15 05:31:22,418 - INFO - Clicked the element using JavaScript.
+2024-12-15 05:31:22,422 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:22,710 - INFO - Page has finished loading.
+2024-12-15 05:31:22,755 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:28,357 - INFO - Page refreshed after submission.
+2024-12-15 05:31:33,362 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:31:33,362 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:34,375 - INFO - Navigated to the website.
+2024-12-15 05:31:34,376 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:34,662 - INFO - Page has finished loading.
+2024-12-15 05:31:34,688 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:35,210 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:35,410 - INFO - Element is visible and clickable.
+2024-12-15 05:31:41,091 - INFO - Clicked the Submit button.
+2024-12-15 05:31:41,092 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:41,372 - INFO - Page has finished loading.
+2024-12-15 05:31:41,405 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:47,360 - INFO - Page refreshed after submission.
+2024-12-15 05:31:52,367 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:31:52,369 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:53,441 - INFO - Navigated to the website.
+2024-12-15 05:31:53,441 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:31:53,811 - INFO - Page has finished loading.
+2024-12-15 05:31:53,840 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:31:54,366 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:31:54,537 - INFO - Element is visible and clickable.
+2024-12-15 05:32:00,195 - INFO - Clicked the Submit button.
+2024-12-15 05:32:00,202 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:32:00,765 - INFO - Page has finished loading.
+2024-12-15 05:32:00,990 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:32:06,487 - INFO - Page refreshed after submission.
+2024-12-15 05:32:11,489 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:32:11,490 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:32:12,458 - INFO - Navigated to the website.
+2024-12-15 05:32:12,460 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:32:12,806 - INFO - Page has finished loading.
+2024-12-15 05:32:12,837 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:32:13,354 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:32:13,616 - INFO - Element is visible and clickable.
+2024-12-15 05:32:19,350 - INFO - Clicked the Submit button.
+2024-12-15 05:32:19,353 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:32:19,366 - INFO - Page has finished loading.
+2024-12-15 05:32:19,393 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:32:24,307 - INFO - Page refreshed after submission.
+2024-12-15 05:32:29,313 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:32:30,457 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 05:33:31,784 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 05:33:31,788 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:33:34,324 - INFO - Navigated to the website.
+2024-12-15 05:33:34,327 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:33:34,347 - INFO - Page has finished loading.
+2024-12-15 05:33:34,743 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:33:35,436 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:33:35,544 - INFO - Element is visible and clickable.
+2024-12-15 05:33:41,305 - INFO - Clicked the Submit button.
+2024-12-15 05:33:41,305 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:33:41,577 - INFO - Page has finished loading.
+2024-12-15 05:33:41,612 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:33:46,451 - INFO - Page refreshed after submission.
+2024-12-15 05:33:51,457 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:33:51,458 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 05:33:52,344 - INFO - Navigated to the website.
+2024-12-15 05:33:52,345 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:33:52,624 - INFO - Page has finished loading.
+2024-12-15 05:33:52,649 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:33:53,184 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 05:33:53,415 - INFO - Element is visible and clickable.
+2024-12-15 05:35:53,513 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=36053): Read timed out. (read timeout=120)
+2024-12-15 05:37:03,975 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55b921fbf8da <unknown>
+#1 0x55b921ae9530 <unknown>
+#2 0x55b921afad7b <unknown>
+#3 0x55b921af9b05 <unknown>
+#4 0x55b921aefb29 <unknown>
+#5 0x55b921aefc55 <unknown>
+#6 0x55b921aede90 <unknown>
+#7 0x55b921af1a4e <unknown>
+#8 0x55b921b7aa8c <unknown>
+#9 0x55b921b5b412 <unknown>
+#10 0x55b921b799e7 <unknown>
+#11 0x55b921b5b1b3 <unknown>
+#12 0x55b921b29e92 <unknown>
+#13 0x55b921b2ae6e <unknown>
+#14 0x55b921f8e33f <unknown>
+#15 0x55b921f9245d <unknown>
+#16 0x55b921f7c987 <unknown>
+#17 0x55b921f92bd1 <unknown>
+#18 0x55b921f6472e <unknown>
+#19 0x55b921fae5e8 <unknown>
+#20 0x55b921fae7ea <unknown>
+#21 0x55b921fbe548 <unknown>
+#22 0x7f183ceeeac3 <unknown>
+
+2024-12-15 05:37:03,982 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:37:03,999 - INFO - Page has finished loading.
+2024-12-15 05:37:04,065 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:39:04,167 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=36053): Read timed out. (read timeout=120)
+2024-12-15 05:39:04,170 - INFO - Closing the browser.
+2024-12-15 05:45:39,546 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 05:45:39,550 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 05:45:41,991 - INFO - Navigated to the website.
+2024-12-15 05:45:41,992 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:45:42,005 - INFO - Page has finished loading.
+2024-12-15 05:45:42,050 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:45:43,072 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 05:45:43,210 - INFO - Element is visible and clickable.
+2024-12-15 05:45:47,518 - INFO - Clicked the Submit button.
+2024-12-15 05:45:47,518 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:45:47,765 - INFO - Page has finished loading.
+2024-12-15 05:45:47,798 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:45:51,830 - INFO - Page refreshed after submission.
+2024-12-15 05:45:56,833 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:45:56,834 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:45:58,019 - INFO - Navigated to the website.
+2024-12-15 05:45:58,020 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:45:58,350 - INFO - Page has finished loading.
+2024-12-15 05:45:58,403 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:45:59,086 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:45:59,166 - INFO - Element is visible and clickable.
+2024-12-15 05:46:00,313 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 470)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x557eac3f58da <unknown>
+#1 0x557eabf1f530 <unknown>
+#2 0x557eabf74186 <unknown>
+#3 0x557eabf72109 <unknown>
+#4 0x557eabf6f85d <unknown>
+#5 0x557eabf6ea1f <unknown>
+#6 0x557eabf62265 <unknown>
+#7 0x557eabf91412 <unknown>
+#8 0x557eabf61ba8 <unknown>
+#9 0x557eabf915de <unknown>
+#10 0x557eabfaf9e7 <unknown>
+#11 0x557eabf911b3 <unknown>
+#12 0x557eabf5fe92 <unknown>
+#13 0x557eabf60e6e <unknown>
+#14 0x557eac3c433f <unknown>
+#15 0x557eac3c845d <unknown>
+#16 0x557eac3b2987 <unknown>
+#17 0x557eac3c8bd1 <unknown>
+#18 0x557eac39a72e <unknown>
+#19 0x557eac3e45e8 <unknown>
+#20 0x557eac3e47ea <unknown>
+#21 0x557eac3f4548 <unknown>
+#22 0x7fd2da132ac3 <unknown>
+
+2024-12-15 05:46:05,618 - INFO - Clicked the element using JavaScript.
+2024-12-15 05:46:05,619 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:05,883 - INFO - Page has finished loading.
+2024-12-15 05:46:05,927 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:11,405 - INFO - Page refreshed after submission.
+2024-12-15 05:46:16,411 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:46:16,411 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:17,406 - INFO - Navigated to the website.
+2024-12-15 05:46:17,415 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:17,827 - INFO - Page has finished loading.
+2024-12-15 05:46:17,860 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:18,612 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:18,769 - INFO - Element is visible and clickable.
+2024-12-15 05:46:24,342 - INFO - Clicked the Submit button.
+2024-12-15 05:46:24,345 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:24,618 - INFO - Page has finished loading.
+2024-12-15 05:46:24,687 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:29,939 - INFO - Page refreshed after submission.
+2024-12-15 05:46:34,941 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:46:34,942 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:35,831 - INFO - Navigated to the website.
+2024-12-15 05:46:35,832 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:36,104 - INFO - Page has finished loading.
+2024-12-15 05:46:36,143 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:36,617 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:36,879 - INFO - Element is visible and clickable.
+2024-12-15 05:46:42,517 - INFO - Clicked the Submit button.
+2024-12-15 05:46:42,518 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:42,534 - INFO - Page has finished loading.
+2024-12-15 05:46:42,851 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:48,411 - INFO - Page refreshed after submission.
+2024-12-15 05:46:53,417 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:46:53,417 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:54,421 - INFO - Navigated to the website.
+2024-12-15 05:46:54,424 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:46:54,728 - INFO - Page has finished loading.
+2024-12-15 05:46:54,769 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:46:55,338 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:46:55,527 - INFO - Element is visible and clickable.
+2024-12-15 05:47:00,668 - INFO - Clicked the Submit button.
+2024-12-15 05:47:00,670 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:47:01,069 - INFO - Page has finished loading.
+2024-12-15 05:47:01,114 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:47:06,782 - INFO - Page refreshed after submission.
+2024-12-15 05:47:11,785 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:47:12,907 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 05:48:14,001 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 05:48:14,005 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:48:16,426 - INFO - Navigated to the website.
+2024-12-15 05:48:16,427 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:16,446 - INFO - Page has finished loading.
+2024-12-15 05:48:16,847 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:48:17,632 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 05:48:17,765 - INFO - Element is visible and clickable.
+2024-12-15 05:48:23,410 - INFO - Clicked the Submit button.
+2024-12-15 05:48:23,411 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:23,777 - INFO - Page has finished loading.
+2024-12-15 05:48:23,822 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:48:29,200 - INFO - Page refreshed after submission.
+2024-12-15 05:48:34,206 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:48:34,206 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 05:48:35,618 - INFO - Navigated to the website.
+2024-12-15 05:48:35,621 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:35,630 - INFO - Page has finished loading.
+2024-12-15 05:48:35,659 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:48:36,274 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 05:48:36,472 - INFO - Element is visible and clickable.
+2024-12-15 05:48:40,789 - INFO - Clicked the Submit button.
+2024-12-15 05:48:40,791 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:41,103 - INFO - Page has finished loading.
+2024-12-15 05:48:41,171 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:48:45,342 - INFO - Page refreshed after submission.
+2024-12-15 05:48:50,348 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:48:50,349 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:48:51,329 - INFO - Navigated to the website.
+2024-12-15 05:48:51,329 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:51,584 - INFO - Page has finished loading.
+2024-12-15 05:48:51,613 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:48:52,106 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:48:52,343 - INFO - Element is visible and clickable.
+2024-12-15 05:48:57,829 - INFO - Clicked the Submit button.
+2024-12-15 05:48:57,831 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:48:58,131 - INFO - Page has finished loading.
+2024-12-15 05:48:58,166 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:49:03,581 - INFO - Page refreshed after submission.
+2024-12-15 05:49:08,590 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:49:08,590 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:49:09,634 - INFO - Navigated to the website.
+2024-12-15 05:49:09,636 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:49:09,939 - INFO - Page has finished loading.
+2024-12-15 05:49:09,968 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:49:10,700 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:49:10,926 - INFO - Element is visible and clickable.
+2024-12-15 05:49:16,495 - INFO - Clicked the Submit button.
+2024-12-15 05:49:16,497 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:49:16,768 - INFO - Page has finished loading.
+2024-12-15 05:49:16,795 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:49:22,640 - INFO - Page refreshed after submission.
+2024-12-15 05:49:27,646 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:49:27,646 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:49:28,623 - INFO - Navigated to the website.
+2024-12-15 05:49:28,624 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:49:28,947 - INFO - Page has finished loading.
+2024-12-15 05:49:28,977 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:49:29,491 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:49:29,742 - INFO - Element is visible and clickable.
+2024-12-15 05:49:35,495 - INFO - Clicked the Submit button.
+2024-12-15 05:49:35,496 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:49:35,819 - INFO - Page has finished loading.
+2024-12-15 05:49:35,843 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:49:41,230 - INFO - Page refreshed after submission.
+2024-12-15 05:49:46,236 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:49:47,378 - INFO - Batch 2 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 05:50:48,520 - INFO - 
+Processing batch 3 of 6...
+2024-12-15 05:50:48,526 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:50:50,929 - INFO - Navigated to the website.
+2024-12-15 05:50:50,930 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:50:50,951 - INFO - Page has finished loading.
+2024-12-15 05:50:51,012 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:50:52,050 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:50:52,183 - INFO - Element is visible and clickable.
+2024-12-15 05:50:57,497 - INFO - Clicked the Submit button.
+2024-12-15 05:50:57,498 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:50:57,771 - INFO - Page has finished loading.
+2024-12-15 05:50:57,795 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:51:03,122 - INFO - Page refreshed after submission.
+2024-12-15 05:51:08,130 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:51:08,130 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:51:09,178 - INFO - Navigated to the website.
+2024-12-15 05:51:09,179 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:51:09,507 - INFO - Page has finished loading.
+2024-12-15 05:51:09,552 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:51:10,228 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 05:51:10,360 - INFO - Element is visible and clickable.
+2024-12-15 05:51:15,787 - INFO - Clicked the Submit button.
+2024-12-15 05:51:15,789 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:51:16,057 - INFO - Page has finished loading.
+2024-12-15 05:51:16,087 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:51:21,464 - INFO - Page refreshed after submission.
+2024-12-15 05:51:26,469 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:51:26,470 - INFO - Processing URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 05:51:27,375 - INFO - Navigated to the website.
+2024-12-15 05:51:27,375 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:51:27,679 - INFO - Page has finished loading.
+2024-12-15 05:51:27,714 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:51:28,423 - INFO - Entered URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 05:51:28,533 - INFO - Element is visible and clickable.
+2024-12-15 05:53:28,635 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=46669): Read timed out. (read timeout=120)
+2024-12-15 05:54:37,583 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55e0b80768da <unknown>
+#1 0x55e0b7ba0530 <unknown>
+#2 0x55e0b7bb1d7b <unknown>
+#3 0x55e0b7bb0b05 <unknown>
+#4 0x55e0b7ba6b29 <unknown>
+#5 0x55e0b7ba6c55 <unknown>
+#6 0x55e0b7ba4e90 <unknown>
+#7 0x55e0b7ba8a4e <unknown>
+#8 0x55e0b7c31a8c <unknown>
+#9 0x55e0b7c12412 <unknown>
+#10 0x55e0b7c309e7 <unknown>
+#11 0x55e0b7c121b3 <unknown>
+#12 0x55e0b7be0e92 <unknown>
+#13 0x55e0b7be1e6e <unknown>
+#14 0x55e0b804533f <unknown>
+#15 0x55e0b804945d <unknown>
+#16 0x55e0b8033987 <unknown>
+#17 0x55e0b8049bd1 <unknown>
+#18 0x55e0b801b72e <unknown>
+#19 0x55e0b80655e8 <unknown>
+#20 0x55e0b80657ea <unknown>
+#21 0x55e0b8075548 <unknown>
+#22 0x7fc90073aac3 <unknown>
+
+2024-12-15 05:54:37,591 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:54:37,611 - INFO - Page has finished loading.
+2024-12-15 05:54:37,646 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:54:42,267 - INFO - Page refreshed after submission.
+2024-12-15 05:54:47,273 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:54:47,274 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:54:48,273 - INFO - Navigated to the website.
+2024-12-15 05:54:48,274 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:54:48,528 - INFO - Page has finished loading.
+2024-12-15 05:54:48,560 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:54:49,181 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:54:49,370 - INFO - Element is visible and clickable.
+2024-12-15 05:54:55,032 - INFO - Clicked the Submit button.
+2024-12-15 05:54:55,034 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:54:55,353 - INFO - Page has finished loading.
+2024-12-15 05:54:55,382 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:55:00,814 - INFO - Page refreshed after submission.
+2024-12-15 05:55:05,820 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:55:05,821 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:55:06,927 - INFO - Navigated to the website.
+2024-12-15 05:55:06,928 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:55:07,216 - INFO - Page has finished loading.
+2024-12-15 05:55:07,251 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:55:07,857 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:55:08,052 - INFO - Element is visible and clickable.
+2024-12-15 05:55:13,420 - INFO - Clicked the Submit button.
+2024-12-15 05:55:13,421 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:55:13,754 - INFO - Page has finished loading.
+2024-12-15 05:55:13,784 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:55:19,812 - INFO - Page refreshed after submission.
+2024-12-15 05:55:24,818 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:55:25,991 - INFO - Batch 3 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 05:56:27,049 - INFO - 
+Processing batch 4 of 6...
+2024-12-15 05:56:27,052 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:56:29,601 - INFO - Navigated to the website.
+2024-12-15 05:56:29,601 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:56:29,623 - INFO - Page has finished loading.
+2024-12-15 05:56:29,678 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:56:30,142 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:56:30,233 - INFO - Element is visible and clickable.
+2024-12-15 05:56:31,325 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 488)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x563f2b8c68da <unknown>
+#1 0x563f2b3f0530 <unknown>
+#2 0x563f2b445186 <unknown>
+#3 0x563f2b443109 <unknown>
+#4 0x563f2b44085d <unknown>
+#5 0x563f2b43fa1f <unknown>
+#6 0x563f2b433265 <unknown>
+#7 0x563f2b462412 <unknown>
+#8 0x563f2b432ba8 <unknown>
+#9 0x563f2b4625de <unknown>
+#10 0x563f2b4809e7 <unknown>
+#11 0x563f2b4621b3 <unknown>
+#12 0x563f2b430e92 <unknown>
+#13 0x563f2b431e6e <unknown>
+#14 0x563f2b89533f <unknown>
+#15 0x563f2b89945d <unknown>
+#16 0x563f2b883987 <unknown>
+#17 0x563f2b899bd1 <unknown>
+#18 0x563f2b86b72e <unknown>
+#19 0x563f2b8b55e8 <unknown>
+#20 0x563f2b8b57ea <unknown>
+#21 0x563f2b8c5548 <unknown>
+#22 0x7fdd3b6c7ac3 <unknown>
+
+2024-12-15 05:56:37,108 - INFO - Clicked the element using JavaScript.
+2024-12-15 05:56:37,111 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:56:37,129 - INFO - Page has finished loading.
+2024-12-15 05:56:37,419 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:56:42,963 - INFO - Page refreshed after submission.
+2024-12-15 05:56:47,969 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:56:47,969 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:56:48,910 - INFO - Navigated to the website.
+2024-12-15 05:56:48,910 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:56:48,917 - INFO - Page has finished loading.
+2024-12-15 05:56:49,295 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:56:49,889 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:56:49,984 - INFO - Element is visible and clickable.
+2024-12-15 05:56:55,276 - INFO - Clicked the Submit button.
+2024-12-15 05:56:55,277 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:56:55,286 - INFO - Page has finished loading.
+2024-12-15 05:56:55,612 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:57:01,191 - INFO - Page refreshed after submission.
+2024-12-15 05:57:06,197 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:57:06,197 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:57:07,157 - INFO - Navigated to the website.
+2024-12-15 05:57:07,158 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:57:07,164 - INFO - Page has finished loading.
+2024-12-15 05:57:07,485 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:57:07,999 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 05:57:08,377 - INFO - Element is visible and clickable.
+2024-12-15 05:57:09,488 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element <button type="button" class="btn btn-primary w-100" onclick="submitForm()">...</button> is not clickable at point (382, 25). Other element would receive the click: <div class="container">...</div>
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x563f2b8c68da <unknown>
+#1 0x563f2b3f0530 <unknown>
+#2 0x563f2b445186 <unknown>
+#3 0x563f2b443109 <unknown>
+#4 0x563f2b44085d <unknown>
+#5 0x563f2b43fa1f <unknown>
+#6 0x563f2b433265 <unknown>
+#7 0x563f2b462412 <unknown>
+#8 0x563f2b432ba8 <unknown>
+#9 0x563f2b4625de <unknown>
+#10 0x563f2b4809e7 <unknown>
+#11 0x563f2b4621b3 <unknown>
+#12 0x563f2b430e92 <unknown>
+#13 0x563f2b431e6e <unknown>
+#14 0x563f2b89533f <unknown>
+#15 0x563f2b89945d <unknown>
+#16 0x563f2b883987 <unknown>
+#17 0x563f2b899bd1 <unknown>
+#18 0x563f2b86b72e <unknown>
+#19 0x563f2b8b55e8 <unknown>
+#20 0x563f2b8b57ea <unknown>
+#21 0x563f2b8c5548 <unknown>
+#22 0x7fdd3b6c7ac3 <unknown>
+
+2024-12-15 05:57:14,956 - INFO - Clicked the element using JavaScript.
+2024-12-15 05:57:14,956 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:57:14,963 - INFO - Page has finished loading.
+2024-12-15 05:57:15,304 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:57:20,220 - INFO - Page refreshed after submission.
+2024-12-15 05:57:25,225 - INFO - Waiting before processing the next URL...
+
+2024-12-15 05:57:25,226 - INFO - Processing URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 05:57:26,127 - INFO - Navigated to the website.
+2024-12-15 05:57:26,127 - INFO - Waiting for the page to finish loading...
+2024-12-15 05:57:26,144 - INFO - Page has finished loading.
+2024-12-15 05:57:26,508 - INFO - Input field is visible and ready for interaction.
+2024-12-15 05:57:27,519 - INFO - Entered URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 05:57:27,718 - INFO - Element is visible and clickable.
+2024-12-15 05:59:27,819 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=46669): Read timed out. (read timeout=120)
+2024-12-15 06:00:39,715 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x563f2b8c68da <unknown>
+#1 0x563f2b3f0530 <unknown>
+#2 0x563f2b401d7b <unknown>
+#3 0x563f2b400b05 <unknown>
+#4 0x563f2b3f6b29 <unknown>
+#5 0x563f2b3f6c55 <unknown>
+#6 0x563f2b3f4e90 <unknown>
+#7 0x563f2b3f8a4e <unknown>
+#8 0x563f2b481a8c <unknown>
+#9 0x563f2b462412 <unknown>
+#10 0x563f2b4809e7 <unknown>
+#11 0x563f2b4621b3 <unknown>
+#12 0x563f2b430e92 <unknown>
+#13 0x563f2b431e6e <unknown>
+#14 0x563f2b89533f <unknown>
+#15 0x563f2b89945d <unknown>
+#16 0x563f2b883987 <unknown>
+#17 0x563f2b899bd1 <unknown>
+#18 0x563f2b86b72e <unknown>
+#19 0x563f2b8b55e8 <unknown>
+#20 0x563f2b8b57ea <unknown>
+#21 0x563f2b8c5548 <unknown>
+#22 0x7fdd3b6c7ac3 <unknown>
+
+2024-12-15 06:00:39,718 - INFO - Waiting for the page to finish loading...
+2024-12-15 06:00:39,729 - INFO - Page has finished loading.
+2024-12-15 06:00:39,766 - INFO - Input field is visible and ready for interaction.
+2024-12-15 06:02:39,862 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=46669): Read timed out. (read timeout=120)
+2024-12-15 06:02:39,864 - INFO - Closing the browser.
+2024-12-15 14:00:03,305 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 14:00:03,305 - INFO - 
+Processing batch 1 of 6...
+2024-12-15 14:00:03,306 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 14:00:03,306 - INFO - Processing URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 14:00:05,656 - INFO - Navigated to the website.
+2024-12-15 14:00:05,656 - INFO - Navigated to the website.
+2024-12-15 14:00:05,656 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:05,656 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:05,668 - INFO - Page has finished loading.
+2024-12-15 14:00:05,668 - INFO - Page has finished loading.
+2024-12-15 14:00:05,699 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:05,699 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:06,607 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 14:00:06,607 - INFO - Entered URL: https://americantopbusiness.site/sitemap.xml
+2024-12-15 14:00:06,763 - INFO - Element is visible and clickable.
+2024-12-15 14:00:06,763 - INFO - Element is visible and clickable.
+2024-12-15 14:00:08,089 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element <button type="button" class="btn btn-primary w-100" onclick="submitForm()">...</button> is not clickable at point (382, 26). Other element would receive the click: <div class="container">...</div>
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x5599348498da <unknown>
+#1 0x559934373530 <unknown>
+#2 0x5599343c8186 <unknown>
+#3 0x5599343c6109 <unknown>
+#4 0x5599343c385d <unknown>
+#5 0x5599343c2a1f <unknown>
+#6 0x5599343b6265 <unknown>
+#7 0x5599343e5412 <unknown>
+#8 0x5599343b5ba8 <unknown>
+#9 0x5599343e55de <unknown>
+#10 0x5599344039e7 <unknown>
+#11 0x5599343e51b3 <unknown>
+#12 0x5599343b3e92 <unknown>
+#13 0x5599343b4e6e <unknown>
+#14 0x55993481833f <unknown>
+#15 0x55993481c45d <unknown>
+#16 0x559934806987 <unknown>
+#17 0x55993481cbd1 <unknown>
+#18 0x5599347ee72e <unknown>
+#19 0x5599348385e8 <unknown>
+#20 0x5599348387ea <unknown>
+#21 0x559934848548 <unknown>
+#22 0x7f8150c1cac3 <unknown>
+
+2024-12-15 14:00:08,089 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element <button type="button" class="btn btn-primary w-100" onclick="submitForm()">...</button> is not clickable at point (382, 26). Other element would receive the click: <div class="container">...</div>
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x5599348498da <unknown>
+#1 0x559934373530 <unknown>
+#2 0x5599343c8186 <unknown>
+#3 0x5599343c6109 <unknown>
+#4 0x5599343c385d <unknown>
+#5 0x5599343c2a1f <unknown>
+#6 0x5599343b6265 <unknown>
+#7 0x5599343e5412 <unknown>
+#8 0x5599343b5ba8 <unknown>
+#9 0x5599343e55de <unknown>
+#10 0x5599344039e7 <unknown>
+#11 0x5599343e51b3 <unknown>
+#12 0x5599343b3e92 <unknown>
+#13 0x5599343b4e6e <unknown>
+#14 0x55993481833f <unknown>
+#15 0x55993481c45d <unknown>
+#16 0x559934806987 <unknown>
+#17 0x55993481cbd1 <unknown>
+#18 0x5599347ee72e <unknown>
+#19 0x5599348385e8 <unknown>
+#20 0x5599348387ea <unknown>
+#21 0x559934848548 <unknown>
+#22 0x7f8150c1cac3 <unknown>
+
+2024-12-15 14:00:12,497 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:00:12,497 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:00:12,497 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:12,497 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:12,777 - INFO - Page has finished loading.
+2024-12-15 14:00:12,777 - INFO - Page has finished loading.
+2024-12-15 14:00:12,805 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:12,805 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:16,847 - INFO - Page refreshed after submission.
+2024-12-15 14:00:16,847 - INFO - Page refreshed after submission.
+2024-12-15 14:00:21,852 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:21,852 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:21,853 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:21,853 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:22,903 - INFO - Navigated to the website.
+2024-12-15 14:00:22,903 - INFO - Navigated to the website.
+2024-12-15 14:00:22,903 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:22,903 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:22,912 - INFO - Page has finished loading.
+2024-12-15 14:00:22,912 - INFO - Page has finished loading.
+2024-12-15 14:00:23,183 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:23,183 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:23,759 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:23,759 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:24,006 - INFO - Element is visible and clickable.
+2024-12-15 14:00:24,006 - INFO - Element is visible and clickable.
+2024-12-15 14:00:29,353 - INFO - Clicked the Submit button.
+2024-12-15 14:00:29,353 - INFO - Clicked the Submit button.
+2024-12-15 14:00:29,354 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:29,354 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:29,628 - INFO - Page has finished loading.
+2024-12-15 14:00:29,628 - INFO - Page has finished loading.
+2024-12-15 14:00:29,666 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:29,666 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:34,822 - INFO - Page refreshed after submission.
+2024-12-15 14:00:34,822 - INFO - Page refreshed after submission.
+2024-12-15 14:00:39,828 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:39,828 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:39,829 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:39,829 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:40,734 - INFO - Navigated to the website.
+2024-12-15 14:00:40,734 - INFO - Navigated to the website.
+2024-12-15 14:00:40,734 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:40,734 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:40,749 - INFO - Page has finished loading.
+2024-12-15 14:00:40,749 - INFO - Page has finished loading.
+2024-12-15 14:00:41,085 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:41,085 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:41,600 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:41,600 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:41,751 - INFO - Element is visible and clickable.
+2024-12-15 14:00:41,751 - INFO - Element is visible and clickable.
+2024-12-15 14:00:46,977 - INFO - Clicked the Submit button.
+2024-12-15 14:00:46,977 - INFO - Clicked the Submit button.
+2024-12-15 14:00:46,977 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:46,977 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:47,227 - INFO - Page has finished loading.
+2024-12-15 14:00:47,227 - INFO - Page has finished loading.
+2024-12-15 14:00:47,268 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:47,268 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:52,658 - INFO - Page refreshed after submission.
+2024-12-15 14:00:52,658 - INFO - Page refreshed after submission.
+2024-12-15 14:00:57,663 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:57,663 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:00:57,663 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:57,663 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:58,618 - INFO - Navigated to the website.
+2024-12-15 14:00:58,618 - INFO - Navigated to the website.
+2024-12-15 14:00:58,619 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:58,619 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:00:58,631 - INFO - Page has finished loading.
+2024-12-15 14:00:58,631 - INFO - Page has finished loading.
+2024-12-15 14:00:58,894 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:58,894 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:00:59,338 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:59,338 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:00:59,400 - INFO - Element is visible and clickable.
+2024-12-15 14:00:59,400 - INFO - Element is visible and clickable.
+2024-12-15 14:01:05,789 - INFO - Clicked the Submit button.
+2024-12-15 14:01:05,789 - INFO - Clicked the Submit button.
+2024-12-15 14:01:05,791 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:05,791 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:06,187 - INFO - Page has finished loading.
+2024-12-15 14:01:06,187 - INFO - Page has finished loading.
+2024-12-15 14:01:06,227 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:06,227 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:11,821 - INFO - Page refreshed after submission.
+2024-12-15 14:01:11,821 - INFO - Page refreshed after submission.
+2024-12-15 14:01:16,826 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:01:16,826 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:01:16,827 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:01:16,827 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:01:17,652 - INFO - Navigated to the website.
+2024-12-15 14:01:17,652 - INFO - Navigated to the website.
+2024-12-15 14:01:17,652 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:17,652 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:17,665 - INFO - Page has finished loading.
+2024-12-15 14:01:17,665 - INFO - Page has finished loading.
+2024-12-15 14:01:17,937 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:17,937 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:18,497 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:01:18,497 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:01:18,645 - INFO - Element is visible and clickable.
+2024-12-15 14:01:18,645 - INFO - Element is visible and clickable.
+2024-12-15 14:01:23,595 - INFO - Clicked the Submit button.
+2024-12-15 14:01:23,595 - INFO - Clicked the Submit button.
+2024-12-15 14:01:23,595 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:23,595 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:01:23,610 - INFO - Page has finished loading.
+2024-12-15 14:01:23,610 - INFO - Page has finished loading.
+2024-12-15 14:01:23,923 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:23,923 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:01:29,485 - INFO - Page refreshed after submission.
+2024-12-15 14:01:29,485 - INFO - Page refreshed after submission.
+2024-12-15 14:01:34,487 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:01:34,487 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:01:35,610 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:01:35,610 - INFO - Batch 1 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:02:36,717 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 14:02:36,717 - INFO - 
+Processing batch 2 of 6...
+2024-12-15 14:02:36,717 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:02:36,717 - INFO - Processing URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:02:38,977 - INFO - Navigated to the website.
+2024-12-15 14:02:38,977 - INFO - Navigated to the website.
+2024-12-15 14:02:38,977 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:38,977 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:38,987 - INFO - Page has finished loading.
+2024-12-15 14:02:38,987 - INFO - Page has finished loading.
+2024-12-15 14:02:39,041 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:39,041 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:39,934 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:02:39,934 - INFO - Entered URL: https://americantopbusiness.site/random-sitemap.xml
+2024-12-15 14:02:39,984 - INFO - Element is visible and clickable.
+2024-12-15 14:02:39,984 - INFO - Element is visible and clickable.
+2024-12-15 14:02:45,409 - INFO - Clicked the Submit button.
+2024-12-15 14:02:45,409 - INFO - Clicked the Submit button.
+2024-12-15 14:02:45,409 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:45,409 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:45,414 - INFO - Page has finished loading.
+2024-12-15 14:02:45,414 - INFO - Page has finished loading.
+2024-12-15 14:02:45,694 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:45,694 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:50,817 - INFO - Page refreshed after submission.
+2024-12-15 14:02:50,817 - INFO - Page refreshed after submission.
+2024-12-15 14:02:55,817 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:02:55,817 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:02:55,818 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 14:02:55,818 - INFO - Processing URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 14:02:56,667 - INFO - Navigated to the website.
+2024-12-15 14:02:56,667 - INFO - Navigated to the website.
+2024-12-15 14:02:56,667 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:56,667 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:02:56,675 - INFO - Page has finished loading.
+2024-12-15 14:02:56,675 - INFO - Page has finished loading.
+2024-12-15 14:02:56,936 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:56,936 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:02:57,414 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 14:02:57,414 - INFO - Entered URL: https://bestbusinesses.space/sitemap.xml
+2024-12-15 14:02:57,514 - INFO - Element is visible and clickable.
+2024-12-15 14:02:57,514 - INFO - Element is visible and clickable.
+2024-12-15 14:03:01,731 - INFO - Clicked the Submit button.
+2024-12-15 14:03:01,731 - INFO - Clicked the Submit button.
+2024-12-15 14:03:01,731 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:01,731 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:02,044 - INFO - Page has finished loading.
+2024-12-15 14:03:02,044 - INFO - Page has finished loading.
+2024-12-15 14:03:02,071 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:02,071 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:05,898 - INFO - Page refreshed after submission.
+2024-12-15 14:03:05,898 - INFO - Page refreshed after submission.
+2024-12-15 14:03:10,904 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:10,904 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:10,905 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:10,905 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:11,806 - INFO - Navigated to the website.
+2024-12-15 14:03:11,806 - INFO - Navigated to the website.
+2024-12-15 14:03:11,806 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:11,806 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:11,817 - INFO - Page has finished loading.
+2024-12-15 14:03:11,817 - INFO - Page has finished loading.
+2024-12-15 14:03:12,081 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:12,081 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:12,547 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:12,547 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:12,623 - INFO - Element is visible and clickable.
+2024-12-15 14:03:12,623 - INFO - Element is visible and clickable.
+2024-12-15 14:03:18,173 - INFO - Clicked the Submit button.
+2024-12-15 14:03:18,173 - INFO - Clicked the Submit button.
+2024-12-15 14:03:18,173 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:18,173 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:18,443 - INFO - Page has finished loading.
+2024-12-15 14:03:18,443 - INFO - Page has finished loading.
+2024-12-15 14:03:18,472 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:18,472 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:23,714 - INFO - Page refreshed after submission.
+2024-12-15 14:03:23,714 - INFO - Page refreshed after submission.
+2024-12-15 14:03:28,719 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:28,719 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:28,719 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:28,719 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:29,659 - INFO - Navigated to the website.
+2024-12-15 14:03:29,659 - INFO - Navigated to the website.
+2024-12-15 14:03:29,660 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:29,660 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:29,677 - INFO - Page has finished loading.
+2024-12-15 14:03:29,677 - INFO - Page has finished loading.
+2024-12-15 14:03:29,988 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:29,988 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:30,507 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:30,507 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:30,660 - INFO - Element is visible and clickable.
+2024-12-15 14:03:30,660 - INFO - Element is visible and clickable.
+2024-12-15 14:03:35,914 - INFO - Clicked the Submit button.
+2024-12-15 14:03:35,914 - INFO - Clicked the Submit button.
+2024-12-15 14:03:35,914 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:35,914 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:35,928 - INFO - Page has finished loading.
+2024-12-15 14:03:35,928 - INFO - Page has finished loading.
+2024-12-15 14:03:36,159 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:36,159 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:41,844 - INFO - Page refreshed after submission.
+2024-12-15 14:03:41,844 - INFO - Page refreshed after submission.
+2024-12-15 14:03:46,849 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:46,849 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:03:46,850 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:46,850 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:47,687 - INFO - Navigated to the website.
+2024-12-15 14:03:47,687 - INFO - Navigated to the website.
+2024-12-15 14:03:47,688 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:47,688 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:47,693 - INFO - Page has finished loading.
+2024-12-15 14:03:47,693 - INFO - Page has finished loading.
+2024-12-15 14:03:47,978 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:47,978 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:48,489 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:48,489 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:03:48,788 - INFO - Element is visible and clickable.
+2024-12-15 14:03:48,788 - INFO - Element is visible and clickable.
+2024-12-15 14:03:54,054 - INFO - Clicked the Submit button.
+2024-12-15 14:03:54,054 - INFO - Clicked the Submit button.
+2024-12-15 14:03:54,054 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:54,054 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:03:54,312 - INFO - Page has finished loading.
+2024-12-15 14:03:54,312 - INFO - Page has finished loading.
+2024-12-15 14:03:54,339 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:54,339 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:03:59,965 - INFO - Page refreshed after submission.
+2024-12-15 14:03:59,965 - INFO - Page refreshed after submission.
+2024-12-15 14:04:04,969 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:04:04,969 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:04:06,105 - INFO - Batch 2 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:04:06,105 - INFO - Batch 2 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:05:07,166 - INFO - 
+Processing batch 3 of 6...
+2024-12-15 14:05:07,166 - INFO - 
+Processing batch 3 of 6...
+2024-12-15 14:05:07,167 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:07,167 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:09,394 - INFO - Navigated to the website.
+2024-12-15 14:05:09,394 - INFO - Navigated to the website.
+2024-12-15 14:05:09,394 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:09,394 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:09,407 - INFO - Page has finished loading.
+2024-12-15 14:05:09,407 - INFO - Page has finished loading.
+2024-12-15 14:05:09,441 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:09,441 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:10,364 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:10,364 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:10,422 - INFO - Element is visible and clickable.
+2024-12-15 14:05:10,422 - INFO - Element is visible and clickable.
+2024-12-15 14:05:15,936 - INFO - Clicked the Submit button.
+2024-12-15 14:05:15,936 - INFO - Clicked the Submit button.
+2024-12-15 14:05:15,936 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:15,936 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:15,942 - INFO - Page has finished loading.
+2024-12-15 14:05:15,942 - INFO - Page has finished loading.
+2024-12-15 14:05:16,230 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:16,230 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:21,157 - INFO - Page refreshed after submission.
+2024-12-15 14:05:21,157 - INFO - Page refreshed after submission.
+2024-12-15 14:05:26,161 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:26,161 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:26,162 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:26,162 - INFO - Processing URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:27,125 - INFO - Navigated to the website.
+2024-12-15 14:05:27,125 - INFO - Navigated to the website.
+2024-12-15 14:05:27,125 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:27,125 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:27,401 - INFO - Page has finished loading.
+2024-12-15 14:05:27,401 - INFO - Page has finished loading.
+2024-12-15 14:05:27,429 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:27,429 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:28,009 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:28,009 - INFO - Entered URL: https://bestbusinesses.space/random-sitemap.xml
+2024-12-15 14:05:28,110 - INFO - Element is visible and clickable.
+2024-12-15 14:05:28,110 - INFO - Element is visible and clickable.
+2024-12-15 14:05:29,207 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 463)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:05:29,207 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 463)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:05:34,277 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:05:34,277 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:05:34,277 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:34,277 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:34,539 - INFO - Page has finished loading.
+2024-12-15 14:05:34,539 - INFO - Page has finished loading.
+2024-12-15 14:05:34,570 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:34,570 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:39,609 - INFO - Page refreshed after submission.
+2024-12-15 14:05:39,609 - INFO - Page refreshed after submission.
+2024-12-15 14:05:44,615 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:44,615 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:44,616 - INFO - Processing URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 14:05:44,616 - INFO - Processing URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 14:05:45,522 - INFO - Navigated to the website.
+2024-12-15 14:05:45,522 - INFO - Navigated to the website.
+2024-12-15 14:05:45,523 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:45,523 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:45,540 - INFO - Page has finished loading.
+2024-12-15 14:05:45,540 - INFO - Page has finished loading.
+2024-12-15 14:05:45,830 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:45,830 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:46,321 - INFO - Entered URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 14:05:46,321 - INFO - Entered URL: https://ustopbusiness.online/sitemap.xml
+2024-12-15 14:05:46,404 - INFO - Element is visible and clickable.
+2024-12-15 14:05:46,404 - INFO - Element is visible and clickable.
+2024-12-15 14:05:50,637 - INFO - Clicked the Submit button.
+2024-12-15 14:05:50,637 - INFO - Clicked the Submit button.
+2024-12-15 14:05:50,638 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:50,638 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:05:50,646 - INFO - Page has finished loading.
+2024-12-15 14:05:50,646 - INFO - Page has finished loading.
+2024-12-15 14:05:50,932 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:50,932 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:05:54,941 - INFO - Page refreshed after submission.
+2024-12-15 14:05:54,941 - INFO - Page refreshed after submission.
+2024-12-15 14:05:59,947 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:59,947 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:05:59,947 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:05:59,947 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:00,907 - INFO - Navigated to the website.
+2024-12-15 14:06:00,907 - INFO - Navigated to the website.
+2024-12-15 14:06:00,907 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:00,907 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:01,224 - INFO - Page has finished loading.
+2024-12-15 14:06:01,224 - INFO - Page has finished loading.
+2024-12-15 14:06:01,260 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:01,260 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:02,071 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:02,071 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:02,139 - INFO - Element is visible and clickable.
+2024-12-15 14:06:02,139 - INFO - Element is visible and clickable.
+2024-12-15 14:06:03,206 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 493)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:06:03,206 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 493)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:06:09,335 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:06:09,335 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:06:09,335 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:09,335 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:09,662 - INFO - Page has finished loading.
+2024-12-15 14:06:09,662 - INFO - Page has finished loading.
+2024-12-15 14:06:09,696 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:09,696 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:15,027 - INFO - Page refreshed after submission.
+2024-12-15 14:06:15,027 - INFO - Page refreshed after submission.
+2024-12-15 14:06:20,030 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:06:20,030 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:06:20,030 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:20,030 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:20,973 - INFO - Navigated to the website.
+2024-12-15 14:06:20,973 - INFO - Navigated to the website.
+2024-12-15 14:06:20,974 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:20,974 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:21,247 - INFO - Page has finished loading.
+2024-12-15 14:06:21,247 - INFO - Page has finished loading.
+2024-12-15 14:06:21,279 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:21,279 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:21,883 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:21,883 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:06:22,116 - INFO - Element is visible and clickable.
+2024-12-15 14:06:22,116 - INFO - Element is visible and clickable.
+2024-12-15 14:06:23,217 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 448)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:06:23,217 - WARNING - Normal click failed, trying JavaScript: Message: element click intercepted: Element is not clickable at point (382, 448)
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x556db4f848da <unknown>
+#1 0x556db4aae530 <unknown>
+#2 0x556db4b03186 <unknown>
+#3 0x556db4b01109 <unknown>
+#4 0x556db4afe85d <unknown>
+#5 0x556db4afda1f <unknown>
+#6 0x556db4af1265 <unknown>
+#7 0x556db4b20412 <unknown>
+#8 0x556db4af0ba8 <unknown>
+#9 0x556db4b205de <unknown>
+#10 0x556db4b3e9e7 <unknown>
+#11 0x556db4b201b3 <unknown>
+#12 0x556db4aeee92 <unknown>
+#13 0x556db4aefe6e <unknown>
+#14 0x556db4f5333f <unknown>
+#15 0x556db4f5745d <unknown>
+#16 0x556db4f41987 <unknown>
+#17 0x556db4f57bd1 <unknown>
+#18 0x556db4f2972e <unknown>
+#19 0x556db4f735e8 <unknown>
+#20 0x556db4f737ea <unknown>
+#21 0x556db4f83548 <unknown>
+#22 0x7fcf22b00ac3 <unknown>
+
+2024-12-15 14:06:28,335 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:06:28,335 - INFO - Clicked the element using JavaScript.
+2024-12-15 14:06:28,335 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:28,335 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:06:28,341 - INFO - Page has finished loading.
+2024-12-15 14:06:28,341 - INFO - Page has finished loading.
+2024-12-15 14:06:28,645 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:28,645 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:06:34,029 - INFO - Page refreshed after submission.
+2024-12-15 14:06:34,029 - INFO - Page refreshed after submission.
+2024-12-15 14:06:39,034 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:06:39,034 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:06:40,170 - INFO - Batch 3 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:06:40,170 - INFO - Batch 3 completed. Closing the browser and waiting for 1 minute before the next batch.
+2024-12-15 14:07:41,237 - INFO - 
+Processing batch 4 of 6...
+2024-12-15 14:07:41,237 - INFO - 
+Processing batch 4 of 6...
+2024-12-15 14:07:41,237 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:07:41,237 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:07:43,451 - INFO - Navigated to the website.
+2024-12-15 14:07:43,451 - INFO - Navigated to the website.
+2024-12-15 14:07:43,451 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:07:43,451 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:07:43,471 - INFO - Page has finished loading.
+2024-12-15 14:07:43,471 - INFO - Page has finished loading.
+2024-12-15 14:07:43,833 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:07:43,833 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:07:44,478 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:07:44,478 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:07:44,619 - INFO - Element is visible and clickable.
+2024-12-15 14:07:44,619 - INFO - Element is visible and clickable.
+2024-12-15 14:07:50,970 - INFO - Clicked the Submit button.
+2024-12-15 14:07:50,970 - INFO - Clicked the Submit button.
+2024-12-15 14:07:50,970 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:07:50,970 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:07:50,984 - INFO - Page has finished loading.
+2024-12-15 14:07:50,984 - INFO - Page has finished loading.
+2024-12-15 14:07:51,310 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:07:51,310 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:07:56,818 - INFO - Page refreshed after submission.
+2024-12-15 14:07:56,818 - INFO - Page refreshed after submission.
+2024-12-15 14:08:01,822 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:01,822 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:01,822 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:01,822 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:02,746 - INFO - Navigated to the website.
+2024-12-15 14:08:02,746 - INFO - Navigated to the website.
+2024-12-15 14:08:02,746 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:02,746 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:03,012 - INFO - Page has finished loading.
+2024-12-15 14:08:03,012 - INFO - Page has finished loading.
+2024-12-15 14:08:03,042 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:03,042 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:03,545 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:03,545 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:03,601 - INFO - Element is visible and clickable.
+2024-12-15 14:08:03,601 - INFO - Element is visible and clickable.
+2024-12-15 14:08:08,999 - INFO - Clicked the Submit button.
+2024-12-15 14:08:08,999 - INFO - Clicked the Submit button.
+2024-12-15 14:08:08,999 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:08,999 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:09,008 - INFO - Page has finished loading.
+2024-12-15 14:08:09,008 - INFO - Page has finished loading.
+2024-12-15 14:08:09,265 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:09,265 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:14,216 - INFO - Page refreshed after submission.
+2024-12-15 14:08:14,216 - INFO - Page refreshed after submission.
+2024-12-15 14:08:19,221 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:19,221 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:19,221 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:19,221 - INFO - Processing URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:20,049 - INFO - Navigated to the website.
+2024-12-15 14:08:20,049 - INFO - Navigated to the website.
+2024-12-15 14:08:20,050 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:20,050 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:20,059 - INFO - Page has finished loading.
+2024-12-15 14:08:20,059 - INFO - Page has finished loading.
+2024-12-15 14:08:20,322 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:20,322 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:20,831 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:20,831 - INFO - Entered URL: https://ustopbusiness.online/random-sitemap.xml
+2024-12-15 14:08:21,038 - INFO - Element is visible and clickable.
+2024-12-15 14:08:21,038 - INFO - Element is visible and clickable.
+2024-12-15 14:08:26,416 - INFO - Clicked the Submit button.
+2024-12-15 14:08:26,416 - INFO - Clicked the Submit button.
+2024-12-15 14:08:26,416 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:26,416 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:26,426 - INFO - Page has finished loading.
+2024-12-15 14:08:26,426 - INFO - Page has finished loading.
+2024-12-15 14:08:26,703 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:26,703 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:31,701 - INFO - Page refreshed after submission.
+2024-12-15 14:08:31,701 - INFO - Page refreshed after submission.
+2024-12-15 14:08:36,706 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:36,706 - INFO - Waiting before processing the next URL...
+
+2024-12-15 14:08:36,706 - INFO - Processing URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 14:08:36,706 - INFO - Processing URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 14:08:37,579 - INFO - Navigated to the website.
+2024-12-15 14:08:37,579 - INFO - Navigated to the website.
+2024-12-15 14:08:37,579 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:37,579 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:08:37,585 - INFO - Page has finished loading.
+2024-12-15 14:08:37,585 - INFO - Page has finished loading.
+2024-12-15 14:08:37,879 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:37,879 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:08:38,318 - INFO - Entered URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 14:08:38,318 - INFO - Entered URL: https://americanbusinesses.space/sitemap.xml
+2024-12-15 14:08:38,375 - INFO - Element is visible and clickable.
+2024-12-15 14:08:38,375 - INFO - Element is visible and clickable.
+2024-12-15 14:10:38,475 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=58777): Read timed out. (read timeout=120)
+2024-12-15 14:10:38,475 - WARNING - Normal click failed, trying JavaScript: HTTPConnectionPool(host='localhost', port=58777): Read timed out. (read timeout=120)
+2024-12-15 14:11:47,390 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x5590c9e638da <unknown>
+#1 0x5590c998d530 <unknown>
+#2 0x5590c999ed7b <unknown>
+#3 0x5590c999db05 <unknown>
+#4 0x5590c9993b29 <unknown>
+#5 0x5590c9993c55 <unknown>
+#6 0x5590c9991e90 <unknown>
+#7 0x5590c9995a4e <unknown>
+#8 0x5590c9a1ea8c <unknown>
+#9 0x5590c99ff412 <unknown>
+#10 0x5590c9a1d9e7 <unknown>
+#11 0x5590c99ff1b3 <unknown>
+#12 0x5590c99cde92 <unknown>
+#13 0x5590c99cee6e <unknown>
+#14 0x5590c9e3233f <unknown>
+#15 0x5590c9e3645d <unknown>
+#16 0x5590c9e20987 <unknown>
+#17 0x5590c9e36bd1 <unknown>
+#18 0x5590c9e0872e <unknown>
+#19 0x5590c9e525e8 <unknown>
+#20 0x5590c9e527ea <unknown>
+#21 0x5590c9e62548 <unknown>
+#22 0x7f003cb41ac3 <unknown>
+
+2024-12-15 14:11:47,390 - ERROR - Failed to click the element using JavaScript: Message: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x5590c9e638da <unknown>
+#1 0x5590c998d530 <unknown>
+#2 0x5590c999ed7b <unknown>
+#3 0x5590c999db05 <unknown>
+#4 0x5590c9993b29 <unknown>
+#5 0x5590c9993c55 <unknown>
+#6 0x5590c9991e90 <unknown>
+#7 0x5590c9995a4e <unknown>
+#8 0x5590c9a1ea8c <unknown>
+#9 0x5590c99ff412 <unknown>
+#10 0x5590c9a1d9e7 <unknown>
+#11 0x5590c99ff1b3 <unknown>
+#12 0x5590c99cde92 <unknown>
+#13 0x5590c99cee6e <unknown>
+#14 0x5590c9e3233f <unknown>
+#15 0x5590c9e3645d <unknown>
+#16 0x5590c9e20987 <unknown>
+#17 0x5590c9e36bd1 <unknown>
+#18 0x5590c9e0872e <unknown>
+#19 0x5590c9e525e8 <unknown>
+#20 0x5590c9e527ea <unknown>
+#21 0x5590c9e62548 <unknown>
+#22 0x7f003cb41ac3 <unknown>
+
+2024-12-15 14:11:47,391 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:11:47,391 - INFO - Waiting for the page to finish loading...
+2024-12-15 14:11:47,399 - INFO - Page has finished loading.
+2024-12-15 14:11:47,399 - INFO - Page has finished loading.
+2024-12-15 14:11:47,436 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:11:47,436 - INFO - Input field is visible and ready for interaction.
+2024-12-15 14:13:47,538 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=58777): Read timed out. (read timeout=120)
+2024-12-15 14:13:47,538 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=58777): Read timed out. (read timeout=120)
+2024-12-15 14:13:47,539 - INFO - Closing the browser.
+2024-12-15 14:13:47,539 - INFO - Closing the browser.
