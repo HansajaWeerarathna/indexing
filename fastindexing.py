@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
+import requests  # Ensure requests is imported
 
 # List of URLs to process
 urls = [
@@ -29,28 +30,33 @@ urls = [
     "https://ustopbusiness.online/random-sitemap.xml", 
     "https://ustopbusiness.online/random-sitemap.xml", 
     "https://ustopbusiness.online/random-sitemap.xml", 
+    "https://sitemap.bestbusinesses.space/sitemap.xml", 
+    "https://sitemap.americantopbusiness.site/sitemap.xml",
+    "https://sitemap.americanbusinesses.space/sitemap.xml", 
+    "https://sitemap.ustopbusiness.online/sitemap.xml", 
     "https://americanbusinesses.space/sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml",
     "https://americanbusinesses.space/random-sitemap.xml", 
     "https://americanbusinesses.space/random-sitemap.xml", 
     "https://americanbusinesses.space/random-sitemap.xml", 
-    "https://americanbusinesses.space/random-sitemap.xml", 
-    "https://sitemap.bestbusinesses.space/sitemap.xml", 
-    "https://sitemap.americantopbusiness.site/sitemap.xml",
-    "https://sitemap.americanbusinesses.space/sitemap.xml", 
-    "https://sitemap.ustopbusiness.online/sitemap.xml"
+    "https://americanbusinesses.space/random-sitemap.xml",
 ]
+
+# urls = [
+#     "https://newsapi.org/sitemap.xml", 
+#     "https://newsapi.org/sitemap.xml", 
+#     "https://newsapi.org/sitemap.xml"
+#     ]
 
 # Path to the chromedriver executable (adjust this for your system)
 chromedriver_path = 'C:/Users/Acer/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe'  # Adjust to your chromedriver path
 
-# Set up Chrome options
+# Set up Chrome options without headless mode
 chrome_options = Options()
+# Removed headless mode
+# chrome_options.add_argument("--headless")  # This line has been removed
 chrome_options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
 chrome_options.add_argument("--no-sandbox")  # Disable sandbox for security reasons
-
-# Create a Service object with the path to the driver
-service = Service(executable_path=chromedriver_path)
 
 # Function to initialize logging
 def setup_logging():
@@ -82,126 +88,66 @@ def setup_logging():
 def wait_until_loaded(driver, max_wait_time=600):
     logger.info("Waiting for the page to finish loading...")
     try:
+        # Wait until the document is fully loaded
         WebDriverWait(driver, max_wait_time).until(
             lambda driver: driver.execute_script("return document.readyState") == "complete"
         )
+
+        # Additional check for a key element that signifies the page is ready (e.g., form or button visibility)
+        WebDriverWait(driver, max_wait_time).until(
+            EC.visibility_of_element_located((By.XPATH, "/html/body/section[2]/div/form/button"))
+        )
+
         logger.info("Page has finished loading.")
     except TimeoutException:
-        logger.error(f"Timeout occurred while waiting for the page to load within {max_wait_time} seconds.")
+        logger.error(f"Timeout occurred while waiting for the page to load.")
 
-# Function to ensure element is clickable
-def wait_for_clickable_element(driver, element, max_wait_time=30):
-    for attempt in range(3):  # Retry up to 3 times
+# Function to process URLs one by one
+def process_urls():
+    global driver  # Declare driver as global to access it in finally block
+    
+    # Set up the Chrome WebDriver without headless mode
+    driver = webdriver.Chrome(service=Service(executable_path=chromedriver_path), options=chrome_options)  # Initialize WebDriver
+    
+    # Process each URL
+    for url in urls:
         try:
-            WebDriverWait(driver, max_wait_time).until(
-                EC.visibility_of(element)  # Ensure element is visible
-            )
-            WebDriverWait(driver, max_wait_time).until(
-                EC.element_to_be_clickable(element)  # Ensure element is clickable
-            )
-            logger.info(f"Element is visible and clickable.")
-            return True
-        except TimeoutException:
-            logger.error(f"Element not clickable within {max_wait_time} seconds. Retrying...")
-            time.sleep(1)  # Wait a moment before retrying
-    return False
+            logger.info(f"Processing URL: {url}")
 
-# Function to click an element using JavaScript if normal click fails
-def click_element_js(driver, element):
-    try:
-        # Use JavaScript to click the element
-        driver.execute_script("arguments[0].click();", element)
-        logger.info("Clicked the element using JavaScript.")
-    except Exception as e:
-        logger.error(f"Failed to click the element using JavaScript: {e}")
+            # Open the website
+            driver.get("https://fastindex.wiki/")  # Visit the page to process the URLs
+            logger.info("Navigated to the website.")
 
-# Function to submit the form with retries
-def submit_form_with_retry(driver, search_box, submit_button, url, retries=3, delay=10):
-    for attempt in range(retries):
-        try:
+            # Wait for the page to load
+            wait_until_loaded(driver)
+
+            # Find the input field and submit button by their XPath
+            search_box = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/div/input")  # URL input field
+            submit_button = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/button")  # Submit button
+
             # Clear and fill out the form
             search_box.clear()
             search_box.send_keys(url)
             logger.info(f"Entered URL: {url}")
 
-            # Scroll the submit button into view
-            driver.execute_script("arguments[0].scrollIntoView(true);", submit_button)
+            # Click the submit button
+            submit_button.click()
+            logger.info("Clicked the Submit button.")
 
-            # Ensure submit button is clickable
-            if wait_for_clickable_element(driver, submit_button):
-                # Click the submit button using normal click or JS fallback
-                try:
-                    submit_button.click()
-                    logger.info("Clicked the Submit button.")
-                except Exception as e:
-                    logger.warning(f"Normal click failed, trying JavaScript: {e}")
-                    click_element_js(driver, submit_button)
+            # Wait for the page to load after form submission
+            wait_until_loaded(driver)
 
-                # Wait for the page to load after form submission
-                wait_until_loaded(driver)
-                return True  # Success
+            # Log completion for the URL
+            logger.info(f"Finished processing URL: {url}")
 
-        except (NoSuchElementException, TimeoutException) as e:
-            logger.error(f"Attempt {attempt + 1}: Failed to submit the form. Error: {e}")
-            if attempt < retries - 1:
-                time.sleep(delay)
-            else:
-                logger.error(f"Failed to submit the form after {retries} attempts.")
-                return False
-
-# Function to process URLs one by one
-def process_urls():
-    global driver  # Declare driver as global to access it in finally block
-    driver = webdriver.Chrome(service=service, options=chrome_options)  # Initialize WebDriver
-
-    # Process each URL
-    for url in urls:
-        logger.info(f"Processing URL: {url}")
-
-        # Open the website
-        driver.get("https://fastindex.wiki/")  # Visit the page to process the URLs
-        logger.info("Navigated to the website.")
-
-        # Wait for the page to load
-        wait_until_loaded(driver)
-
-        try:
-            # Find the input field and submit button by their XPath
-            search_box = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/div/input")  # URL input field
-            submit_button = driver.find_element(By.XPATH, "/html/body/section[2]/div/form/button")  # Submit button
-
-            # Wait for the input field and submit button to be interactable
-            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(search_box))
-            WebDriverWait(driver, 10).until(EC.element_to_be_clickable(submit_button))
-
-            # Submit the form with retries
-            if not submit_form_with_retry(driver, search_box, submit_button, url):
-                logger.error(f"Failed to submit URL: {url} after retries.")
-                continue
-
-        except (NoSuchElementException, TimeoutException) as e:
+        except Exception as e:
             logger.error(f"An error occurred while processing the URL {url}: {e}")
-
-        # Refresh the page before going to the next URL
-        driver.refresh()
-        logger.info("Page refreshed after submission.")
-
-        # Wait a little before moving on to the next URL
-        time.sleep(5)  # Adjust the delay as needed
-        logger.info("Waiting before processing the next URL...\n")
 
     # After processing all URLs, close the browser
     logger.info("Processing completed. Closing the browser.")
     driver.quit()
 
-# Run the script
-try:
-    logger = setup_logging()  # Set up logging
+# Main script execution
+if __name__ == "__main__":
+    logger = setup_logging()
     process_urls()
-except Exception as e:
-    logger.error(f"An error occurred: {e}")
-finally:
-    # Close the browser after processing all URLs
-    logger.info("Closing the browser.")
-    if 'driver' in locals():  # Check if driver is defined
-        driver.quit()  # Now driver is defined
