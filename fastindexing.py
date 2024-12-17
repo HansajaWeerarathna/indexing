@@ -54,7 +54,7 @@ chromedriver_path = 'C:/Users/Acer/Downloads/chromedriver-win64/chromedriver-win
 # Set up Chrome options without headless mode
 chrome_options = Options()
 # Removed headless mode
-# chrome_options.add_argument("--headless")  # This line has been removed
+chrome_options.add_argument("--headless")  # This line has been removed
 chrome_options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
 chrome_options.add_argument("--no-sandbox")  # Disable sandbox for security reasons
 
